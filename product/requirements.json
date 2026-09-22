@@ -5,7 +5,7 @@
       "source": "default"
     },
     "product_name": {
-      "value": "方柱升降斜口猫碗",
+      "value": "圆柱升降斜口猫碗",
       "source": "user"
     },
     "height_range_mm": {
@@ -24,11 +24,11 @@
       "source": "user"
     },
     "square_post_connection": {
-      "value": true,
+      "value": "仅柱顶与碗底采用凸起方榫连接",
       "source": "user"
     },
     "height_lock": {
-      "value": "screw",
+      "value": "背面螺丝直接旋入底座内螺纹，无螺母无外凸方块",
       "source": "user"
     },
     "height_datum": {
@@ -71,10 +71,6 @@
       "value": 40,
       "source": "default"
     },
-    "square_mast_mm": {
-      "value": 22,
-      "source": "default"
-    },
     "slide_clearance_per_side_mm": {
       "value": 0.3,
       "source": "default"
@@ -92,7 +88,7 @@
       "source": "default"
     },
     "lock_hardware": {
-      "value": "ISO 4762 M5x16 + ISO 4032 M5 captive nut",
+      "value": "ISO4762 M5x12 full thread, direct M5x0.8 internal thread",
       "source": "default"
     },
     "delivery": {
@@ -105,6 +101,26 @@
     },
     "test_target": {
       "value": "最高档进行1 kg静载与侧向稳定性实物测试；未实测",
+      "source": "default"
+    },
+    "mast_shape": {
+      "value": "round",
+      "source": "user"
+    },
+    "mast_diameter_mm": {
+      "value": 28,
+      "source": "default"
+    },
+    "height_detents": {
+      "value": false,
+      "source": "user"
+    },
+    "bowl_bottom_reinforcement": {
+      "value": "可局部加厚以容纳方榫",
+      "source": "user"
+    },
+    "back_direction": {
+      "value": "-X，碗口较高侧为背面",
       "source": "default"
     }
   },

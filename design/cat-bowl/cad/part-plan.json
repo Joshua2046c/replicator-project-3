@@ -9,21 +9,11 @@
       "catalogId": "bd-warehouse:bd_warehouse.fastener.SocketHeadCapScrew",
       "parameters": {
         "size": "M5-0.8",
-        "length": 16,
+        "length": 12,
         "fastener_type": "iso4762",
-        "simple": true
-      }
-    },
-    {
-      "id": "lock_nut",
-      "status": "selected",
-      "match": "exact",
-      "catalogId": "bd-warehouse:bd_warehouse.fastener.HexNut",
-      "parameters": {
-        "size": "M5-0.8",
-        "fastener_type": "iso4032",
-        "simple": true
-      }
+        "simple": false
+      },
+      "geometry_note": "Original 17-solid detailed catalog STEP acquired; final single-body screw uses same ISO4762 library head and ISO thread clipped to12mm; full threads shown exploded at rear, engagement unverified"
     }
   ],
   "unresolvedItems": []

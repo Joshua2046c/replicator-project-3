@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 18,
-  "sourceHash": "7a634fab22a3c747732db5198eaf26c8617f7e7ea9131b329ceb59650838a063",
+  "buildNumber": 38,
+  "sourceHash": "0dfbf1933aa2b271685c94d1da3d5af7280f8c5c3f9892d81eec7fa0df42e59d",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "base",
           "order": 0,
           "path": "design/cat-bowl/source/parts/base/000-base.py",
-          "sha256": "05572667a814d2f64d3843a30bbf4150327a1df96659cdeea4ead107a020dfde"
+          "sha256": "cf5864948ccbbbd3108b9faf1b3f912982ea0c321843f5aa03c036d0727dbc7b"
         }
       ],
       "dependencies": []
@@ -28,7 +28,7 @@
           "target": "mast",
           "order": 0,
           "path": "design/cat-bowl/source/parts/mast/000-mast.py",
-          "sha256": "08e30e45570be596d2f457967f3d93755a4d31fce8c4335e34fe90e9a309a862"
+          "sha256": "066389e435efc9a1579ac40112391070e4a116eed2e20df1fce8b6212e6bc494"
         }
       ],
       "dependencies": []
@@ -42,28 +42,21 @@
           "target": "bowl",
           "order": 0,
           "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
-          "sha256": "a16ed6c61346fb29114765b1fb15b707edbe45df765647a1f1acad4eb7a87692"
+          "sha256": "ac71070a39e0de30bb8292ff8de542c6eeb8c71c3b9ad5ac44348d7cb211d7bb"
         }
       ],
       "dependencies": []
     },
     {
-      "id": "imports",
-      "label": "imports",
+      "id": "lock_hardware",
+      "label": "lock_hardware",
       "cells": [
         {
-          "id": "lock_screw",
-          "target": "imports",
+          "id": "lock_hardware",
+          "target": "lock_hardware",
           "order": 0,
-          "path": "design/cat-bowl/source/parts/imports/000-lock_screw.py",
-          "sha256": "cf3646019d89c02072e72ee0bef9b8d4eb0a73f5501dea50b1a60e39ea6fc710"
-        },
-        {
-          "id": "lock_nut",
-          "target": "imports",
-          "order": 1,
-          "path": "design/cat-bowl/source/parts/imports/001-lock_nut.py",
-          "sha256": "6c36f05b7dc0cd9e1343b26728ea8b935272067abc35f2c95462b0880146832f"
+          "path": "design/cat-bowl/source/parts/lock_hardware/000-lock_hardware.py",
+          "sha256": "6be810bc8bd212eaf92e7d6cca543d961c42f936fdc097c0801684b5c47ebead"
         }
       ],
       "dependencies": []
@@ -73,9 +66,9 @@
     {
       "id": "base",
       "target": "base",
-      "label": "圆底座与套筒",
+      "label": "圆底座背面内螺纹",
       "kind": "generated",
-      "shapeHash": "92e382baf1ab48a7532972d485a5f594546bb1a136f23a8931e429b09c1f8ddc",
+      "shapeHash": "178eb501c92e4f59715753dd4c22b752503436ed294e904d77c840ec2c3a7e5e",
       "transform": {
         "positionMm": [
           0,
@@ -99,9 +92,9 @@
     {
       "id": "mast",
       "target": "mast",
-      "label": "方形升降柱",
+      "label": "圆形升降柱与方榫",
       "kind": "generated",
-      "shapeHash": "058d8c33b91f11b925be4d7df00f6522fdbaa12cc96e1fce8d38ad7fbd9e54c7",
+      "shapeHash": "e36418057d8218912a386c904d246551c662ef604c41ce82c85a795e6007ed49",
       "transform": {
         "positionMm": [
           0,
@@ -125,9 +118,9 @@
     {
       "id": "bowl",
       "target": "bowl",
-      "label": "可拆倾斜碗",
+      "label": "加厚底部可拆斜碗",
       "kind": "generated",
-      "shapeHash": "8ce65a6f0a478233bec26dded12c67ecbe776a60c7c6f7bd39fcd9c7067fe2ef",
+      "shapeHash": "565cf9dedd313d88870b1b1d9b65eeb1d387eb968558143069163f8c8ffc57c0",
       "transform": {
         "positionMm": [
           0,
@@ -149,46 +142,20 @@
       "datums": []
     },
     {
-      "id": "lock_nut",
-      "target": "imports",
-      "label": "M5捕获螺母",
-      "kind": "imported",
-      "shapeHash": "c7fc13c0af81c0e258960a92882592996d27483b1c3679d9aa4aeb8803cf2e7f",
-      "transform": {
-        "positionMm": [
-          16,
-          0,
-          54
-        ],
-        "rotationDeg": [
-          0,
-          90,
-          0
-        ],
-        "rotationOrder": "XYZ",
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "datums": []
-    },
-    {
       "id": "lock_screw",
-      "target": "imports",
-      "label": "M5锁紧螺丝",
-      "kind": "imported",
-      "shapeHash": "440c6b9fbfb0dd1ec086beb85326144eaf7d5173b5824b938ad0068eaa39877a",
+      "target": "lock_hardware",
+      "label": "背面螺纹锁紧螺丝",
+      "kind": "generated",
+      "shapeHash": "a21fbe65a08b77082688070edc3b7a70bd60c63a7d0012e22cd454964b58c56f",
       "transform": {
         "positionMm": [
-          27,
+          -44,
           0,
           54
         ],
         "rotationDeg": [
           0,
-          90,
+          -90,
           0
         ],
         "rotationOrder": "XYZ",
@@ -201,68 +168,30 @@
       "datums": []
     }
   ],
-  "assets": [
-    {
-      "id": "lock_screw",
-      "kind": "step",
-      "path": "design/cat-bowl/source/assets/307b70bffb03bb4668619b15727a61930497df1d98840932578788b208d3a275.step",
-      "sha256": "307b70bffb03bb4668619b15727a61930497df1d98840932578788b208d3a275",
-      "label": "M5锁紧螺丝",
-      "provenance": {
-        "sourcePath": ".work/cache/cad-catalog/bd-warehouse/6636b447c424599ae32e1764a5e958dff768a3af29e434caee0763783a0a964e.step",
-        "provider": "bd-warehouse",
-        "sourceVersion": "0.2.0",
-        "license": "Apache-2.0",
-        "declaredSha256": "307b70bffb03bb4668619b15727a61930497df1d98840932578788b208d3a275"
-      }
-    },
-    {
-      "id": "lock_nut",
-      "kind": "step",
-      "path": "design/cat-bowl/source/assets/68fdb6a8576a829bc3927712fcb317a8540ddc55636aa9a20204f7ac41a29457.step",
-      "sha256": "68fdb6a8576a829bc3927712fcb317a8540ddc55636aa9a20204f7ac41a29457",
-      "label": "M5捕获螺母",
-      "provenance": {
-        "sourcePath": ".work/cache/cad-catalog/bd-warehouse/f2aba2c4b7ef89cd76acece4a81288d7b8c00ebbcf35ac2c9c6f695360e9ca72.step",
-        "provider": "bd-warehouse",
-        "sourceVersion": "0.2.0",
-        "license": "Apache-2.0",
-        "declaredSha256": "68fdb6a8576a829bc3927712fcb317a8540ddc55636aa9a20204f7ac41a29457"
-      }
-    }
-  ],
+  "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T11:41:08.536Z",
+  "updatedAt": "2026-09-22T12:25:03.123Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
       "base_thickness": 8,
       "base_sleeve_height": 66,
       "base_sleeve_diameter": 40,
-      "base_square_bore": 22.6,
       "base_bore_floor": 4,
       "base_flare_radius": 39,
       "base_flare_height": 18,
       "base_lock_height": 54,
-      "base_lock_outer_x": 24,
-      "base_lock_lug_width": 16,
-      "base_lock_lug_height": 16,
-      "base_lock_clearance": 5.6,
-      "base_nut_clearance": 0.3,
-      "base_nut_start_x": 16,
-      "base_edge_radius": 1.5
+      "base_edge_radius": 1.5,
+      "base_round_bore": 28.6,
+      "base_thread_engagement": 4.5,
+      "base_thread_diametral_compensation": 0.45
     },
     "mast": {
-      "mast_width": 22,
+      "mast_width": 28,
       "mast_body_length": 62.11808800909513,
       "mast_peg_width": 16,
       "mast_peg_height": 11,
-      "mast_edge_chamfer": 0.6,
-      "mast_max_line_z": 22,
-      "mast_mark_pitch": 10,
-      "mast_mark_width": 9,
-      "mast_mark_height": 0.6,
-      "mast_mark_depth": 0.35
+      "mast_edge_chamfer": 0.6
     },
     "bowl": {
       "bowl_diameter": 140,
@@ -275,9 +204,13 @@
       "bowl_socket_drop": 14,
       "bowl_socket_depth": 12,
       "bowl_inner_fillet": 2,
-      "bowl_socket_shoulder_width": 22,
-      "bowl_socket_bottom_relief": 0.8
+      "bowl_socket_shoulder_width": 28,
+      "bowl_socket_bottom_relief": 0.8,
+      "bowl_socket_upper_diameter": 60
     },
-    "imports": {}
+    "lock_hardware": {
+      "lock_screw_thread_phase_deg": 0,
+      "lock_screw_visible_thread_length": 12
+    }
   }
 }

@@ -2,12 +2,12 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "参照图片的110–150 mm方柱升降斜口猫碗装配样机",
+  "summary": "110–150 mm圆柱连续升降斜口猫碗，顶部方榫与背面直接螺纹锁紧",
   "required_interfaces": [
     {
-      "id": "square_slide",
+      "id": "round_slide",
       "kind": "internal_fit",
-      "description": "22 mm方柱与22.6 mm方孔，40 mm行程；最高档导向长度22 mm",
+      "description": "28 mm圆柱与28.6 mm圆孔，无卡点刻槽，40 mm连续行程，最高位置22 mm重叠",
       "source": "user_requested",
       "required": true
     },
@@ -21,7 +21,7 @@
     {
       "id": "height_lock",
       "kind": "mechanical",
-      "description": "M5侧向顶紧螺丝与防转金属螺母，手托碗调节后锁紧",
+      "description": "背面M5x12全螺纹螺丝直接旋入底座M5x0.8内螺纹，无螺母与外凸方块",
       "source": "user_requested",
       "required": true
     }
@@ -38,14 +38,20 @@
       "source": "user_requested",
       "description": "升降与螺丝锁紧参考",
       "path": "product/references/uploads/20260922T112814810Z-2-image.png"
+    },
+    {
+      "id": "round_mast_markup",
+      "source": "user_requested",
+      "description": "圆柱、方榫、去除方块及背面螺纹要求",
+      "path": "product/references/uploads/20260922T115012765Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "装入侧面捕获螺母与螺丝；插入方柱，套上斜碗；手托碗调节到110–150 mm后拧紧",
-    "maintenance": "向上拔出碗；松开螺丝后拔出方柱清洁；螺母在拆解时注意收好",
+    "installation": "插入圆升降柱，将斜碗套于顶部方榫；托碗调节高度及方向后，从背面旋紧螺丝",
+    "maintenance": "托碗松螺丝，拔出碗与圆柱清洁",
     "user_access": [
-      "侧面锁紧螺丝",
-      "顶部可拆碗"
+      "背面锁紧螺丝",
+      "可拆倾斜碗"
     ]
   },
   "cad": {
@@ -54,19 +60,20 @@
       {
         "role": "adjustable_cat_bowl",
         "design_id": "cat-bowl",
-        "description": "猫碗、方柱、底座和锁紧五金装配",
+        "description": "圆柱、加厚斜碗、圆底座和背面螺纹螺丝",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
         ],
         "interface_ids": [
-          "square_slide",
+          "round_slide",
           "bowl_detach",
           "height_lock"
         ],
         "reference_ids": [
           "reference_image_1",
-          "reference_image_2"
+          "reference_image_2",
+          "round_mast_markup"
         ]
       }
     ]

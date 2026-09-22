@@ -3,7 +3,7 @@
   "status": "ready",
   "units": "mm",
   "source": "default",
-  "frame": "Z up, base bottom Z0, tilt about Y",
+  "frame": "Z up; bowl tilts about Y; rear is -X (high rim side)",
   "bowl": {
     "diameter": 140,
     "bottom_diameter": 90,
@@ -15,44 +15,53 @@
     "socket_inner": 16.5,
     "socket_depth": 12,
     "socket_bottom_relative_z": -14,
-    "socket_shoulder_width": 22,
-    "socket_bottom_relief": 0.8
+    "socket_shoulder_width": 28,
+    "socket_bottom_relief": 0.8,
+    "socket_shape": "round tapered reinforcement",
+    "socket_upper_diameter": 60
   },
   "base": {
     "diameter": 160,
     "thickness": 8,
     "sleeve_od": 40,
     "sleeve_top_z": 66,
-    "square_bore": 22.6,
-    "bore_floor_z": 4
+    "bore_floor_z": 4,
+    "round_bore": 28.6
   },
   "mast": {
-    "width": 22,
     "body_length": 62.11808800909513,
     "bottom_z_min": 4,
     "bottom_z_max": 44,
     "peg_width": 16,
     "peg_height": 11,
-    "overlap_at_max": 22
+    "overlap_at_max": 22,
+    "diameter": 28,
+    "detents": false,
+    "grooves": false
   },
   "lock": {
-    "standard": "ISO4762 M5-0.8x16 + ISO4032 M5-0.8",
-    "screw_axis": "X",
+    "standard": "ISO4762 M5-0.8x12 full thread",
+    "receiver": "direct internal M5x0.8 thread in base",
+    "side": "rear -X",
     "center_z": 54,
-    "screw_underhead_x": 27,
-    "tip_x": 11,
-    "nut_axial_start_x": 16,
-    "nut_af": 8,
-    "nut_thickness": 4.7,
-    "nut_slot_width": 8.6,
-    "nut_slot_axial": 5.3,
-    "bore_diameter": 5.6
+    "screw_underhead_x": -26,
+    "tip_x": -14,
+    "kit_engagement_mm": 4.5,
+    "print_material": "PETG",
+    "kit_compensation_diametral_mm": 0.45,
+    "nuts": 0,
+    "external_blocks": 0,
+    "display_underhead_x": -44,
+    "intended_underhead_x": -26,
+    "display_state": "rear exploded, NOT locked",
+    "thread_mating_verified": false,
+    "thread_source": "bd_warehouse IsoThread M5x0.8; female negative diameter5.45"
   },
   "connections": [
     {
-      "id": "square_slide",
+      "id": "round_slide",
       "implementation": "free",
-      "reason": "sliding square fit; no screw thread"
+      "reason": "round sliding fit without detents"
     },
     {
       "id": "bowl_detach",
@@ -61,8 +70,8 @@
     },
     {
       "id": "height_lock",
-      "implementation": "free",
-      "reason": "make_screw_joint_v1 strategy=captive_nut raised ScrewJointNotApplicableV1 in committed base cell; custom top-loading nut pocket and clearance bore, verified imported ISO hardware"
+      "implementation": "free_after_kit_rejection",
+      "reason": "Curved mouth overrun explicitly rejected by screwjoint; ISO library external negative used for compensated internal thread. Full engaged assembly computation repeatedly timed out."
     }
   ],
   "risks": [
@@ -74,7 +83,12 @@
     {
       "id": "travel",
       "resolved_for_cad": true,
-      "note": "engraved limit line; not a captive anti-pullout mechanism"
+      "note": "no grooves or stops; user must keep at least22 mm insertion and hold bowl while loosening"
+    },
+    {
+      "id": "thread_assembly_runtime",
+      "resolved_for_cad": false,
+      "note": "Engaged screw placement repeatedly timed out at180s; rear exploded display exported, not assembled-thread verification"
     }
   ]
 }

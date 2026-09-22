@@ -2,49 +2,40 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "131ae8c7e0d80962ae95e8cfb2f16795a1ad7c493a8345e2ef1cc761ac4af23f",
+  "requirements_digest": "827fc493dee6ab95d2beb2ac4a317e38059ef86b207d8cf26461fbeaeaf2c624",
   "items": [
     {
       "id": "base",
-      "name": "圆底座与方孔套筒",
+      "name": "圆底座与圆孔套筒，背面直接内螺纹",
       "quantity": 1,
-      "part_number": "custom-base-v1",
+      "part_number": "custom-base-v2",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     },
     {
       "id": "mast",
-      "name": "方形升降柱与顶部方榫",
+      "name": "光滑圆升降柱与顶部方榫",
       "quantity": 1,
-      "part_number": "custom-mast-v1",
+      "part_number": "custom-mast-v2",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     },
     {
       "id": "bowl",
-      "name": "倾斜可拆碗体",
+      "name": "底部圆形加厚的可拆斜碗",
       "quantity": 1,
-      "part_number": "custom-bowl-v1",
+      "part_number": "custom-bowl-v2",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     },
     {
       "id": "lock_screw",
-      "name": "M5x16内六角锁紧螺丝",
+      "name": "M5x12全螺纹内六角锁紧螺丝",
       "quantity": 1,
-      "part_number": "ISO4762-M5-0.8x16",
-      "source": "default",
-      "procurement_status": "external_procurement_required",
-      "required_user_evidence": []
-    },
-    {
-      "id": "lock_nut",
-      "name": "M5六角捕获螺母",
-      "quantity": 1,
-      "part_number": "ISO4032-M5-0.8",
+      "part_number": "ISO4762-M5-0.8x12",
       "source": "default",
       "procurement_status": "external_procurement_required",
       "required_user_evidence": []
@@ -55,7 +46,7 @@
     {
       "id": "fit_test",
       "severity": "advisory",
-      "description": "PETG配合间隙和金属顶紧重复寿命需实物测试"
+      "description": "直接打印内螺纹的尺寸、侧向打印质量与反复调节寿命需实测；圆柱松开后可旋转"
     },
     {
       "id": "food_contact",
@@ -66,6 +57,11 @@
       "id": "purchase",
       "severity": "advisory",
       "description": "标准五金几何已明确；品牌库存价格未查询"
+    },
+    {
+      "id": "thread_mating",
+      "severity": "advisory",
+      "description": "尺寸与标准明确，但旋合装配计算超时；本版以背面分解展示，不是完整装配验证"
     }
   ]
 }
