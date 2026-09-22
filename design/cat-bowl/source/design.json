@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 38,
-  "sourceHash": "0dfbf1933aa2b271685c94d1da3d5af7280f8c5c3f9892d81eec7fa0df42e59d",
+  "buildNumber": 56,
+  "sourceHash": "b729e0fbb3f57fedb8cb92c83803a7b3f279acd1b2ca724f3c17598f70d32e90",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "base",
           "order": 0,
           "path": "design/cat-bowl/source/parts/base/000-base.py",
-          "sha256": "cf5864948ccbbbd3108b9faf1b3f912982ea0c321843f5aa03c036d0727dbc7b"
+          "sha256": "e6fb39b949d8614099b83336e31b7020e31bb72412cd0d9daf22f99fb2cc21bf"
         }
       ],
       "dependencies": []
@@ -28,7 +28,7 @@
           "target": "mast",
           "order": 0,
           "path": "design/cat-bowl/source/parts/mast/000-mast.py",
-          "sha256": "066389e435efc9a1579ac40112391070e4a116eed2e20df1fce8b6212e6bc494"
+          "sha256": "7a595dcf5f6fb16c6a19cfcceda9b71b26506c12527669a3a6f1d634eae05991"
         }
       ],
       "dependencies": []
@@ -42,7 +42,7 @@
           "target": "bowl",
           "order": 0,
           "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
-          "sha256": "ac71070a39e0de30bb8292ff8de542c6eeb8c71c3b9ad5ac44348d7cb211d7bb"
+          "sha256": "c1b93738ae015684507a145510ec4a7554a85937bde075da4306562a8ae445e3"
         }
       ],
       "dependencies": []
@@ -66,9 +66,9 @@
     {
       "id": "base",
       "target": "base",
-      "label": "圆底座背面内螺纹",
+      "label": "圆弧过渡圆底座",
       "kind": "generated",
-      "shapeHash": "178eb501c92e4f59715753dd4c22b752503436ed294e904d77c840ec2c3a7e5e",
+      "shapeHash": "93e6f195bbcaa98810eef3fee008866d6d174d2039b1056fc45e8082fbb9b413",
       "transform": {
         "positionMm": [
           0,
@@ -92,9 +92,9 @@
     {
       "id": "mast",
       "target": "mast",
-      "label": "圆形升降柱与方榫",
+      "label": "斜承托台与圆升降柱",
       "kind": "generated",
-      "shapeHash": "e36418057d8218912a386c904d246551c662ef604c41ce82c85a795e6007ed49",
+      "shapeHash": "2a3cdd4b6fdfa76393e71606397029d7143749501efa99f8a2c99dd7bb679041",
       "transform": {
         "positionMm": [
           0,
@@ -118,9 +118,9 @@
     {
       "id": "bowl",
       "target": "bowl",
-      "label": "加厚底部可拆斜碗",
+      "label": "匹配斜台凹槽可拆碗",
       "kind": "generated",
-      "shapeHash": "565cf9dedd313d88870b1b1d9b65eeb1d387eb968558143069163f8c8ffc57c0",
+      "shapeHash": "adba33fa454914167d49bb5fab159db600d44c1df0be8e65cf330d1ffe775184",
       "transform": {
         "positionMm": [
           0,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T12:25:03.123Z",
+  "updatedAt": "2026-09-22T12:46:14.408Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -190,8 +190,11 @@
       "mast_width": 28,
       "mast_body_length": 62.11808800909513,
       "mast_peg_width": 16,
-      "mast_peg_height": 11,
-      "mast_edge_chamfer": 0.6
+      "mast_peg_height": 7,
+      "mast_edge_chamfer": 0.6,
+      "mast_seat_angle_deg": 10,
+      "mast_seat_center_rise": 9,
+      "mast_seat_diameter": 60
     },
     "bowl": {
       "bowl_diameter": 140,
@@ -202,11 +205,15 @@
       "bowl_socket_outer": 30,
       "bowl_socket_inner": 16.5,
       "bowl_socket_drop": 14,
-      "bowl_socket_depth": 12,
+      "bowl_socket_depth": 8,
       "bowl_inner_fillet": 2,
-      "bowl_socket_shoulder_width": 28,
-      "bowl_socket_bottom_relief": 0.8,
-      "bowl_socket_upper_diameter": 60
+      "bowl_socket_upper_diameter": 60,
+      "bowl_seat_center_rise": 9,
+      "bowl_recess_center_depth": 2,
+      "bowl_recess_radial_clearance": 0.3,
+      "bowl_recess_min_wall": 3,
+      "bowl_floor_thickness": 6.5,
+      "bowl_seat_diameter": 60
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,

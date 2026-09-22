@@ -11,14 +11,19 @@
     "wall": 3,
     "angle_deg": 10,
     "bottom_center_z_min": 80.11808800909513,
-    "socket_outer": 30,
+    "socket_outer": 66.6,
     "socket_inner": 16.5,
-    "socket_depth": 12,
-    "socket_bottom_relative_z": -14,
-    "socket_shoulder_width": 28,
-    "socket_bottom_relief": 0.8,
-    "socket_shape": "round tapered reinforcement",
-    "socket_upper_diameter": 60
+    "socket_depth": 8,
+    "socket_bottom_relative_z": -7,
+    "socket_shoulder_width": 60,
+    "socket_shape": "inclined circular reinforcing rim with matching sloped recess",
+    "socket_upper_diameter": 72.6,
+    "seat_center_relative_z": -5,
+    "recess_diameter": 60.6,
+    "recess_center_depth": 2,
+    "floor_thickness": 6.5,
+    "pocket_roof_relative_z": 3,
+    "minimum_pocket_closing_wall": 2.145575
   },
   "base": {
     "diameter": 160,
@@ -26,18 +31,24 @@
     "sleeve_od": 40,
     "sleeve_top_z": 66,
     "bore_floor_z": 4,
-    "round_bore": 28.6
+    "round_bore": 28.6,
+    "transition_radius": 19
   },
   "mast": {
     "body_length": 62.11808800909513,
     "bottom_z_min": 4,
     "bottom_z_max": 44,
     "peg_width": 16,
-    "peg_height": 11,
+    "peg_height": 7,
     "overlap_at_max": 22,
     "diameter": 28,
     "detents": false,
-    "grooves": false
+    "grooves": false,
+    "seat_center_above_body": 9,
+    "seat_angle_deg": 10,
+    "peg_exposed_at_center": 7,
+    "seat_diameter": 60,
+    "peg_tip_above_body": 16
   },
   "lock": {
     "standard": "ISO4762 M5-0.8x12 full thread",
@@ -66,7 +77,7 @@
     {
       "id": "bowl_detach",
       "implementation": "free",
-      "reason": "vertical square peg with gravity shoulder seating"
+      "reason": "60 mm inclined table at10deg, matching60.6 mm recess with2 mm central lip depth; upright16 mm square peg,16.5 pocket, center exposure7, tip gap1"
     },
     {
       "id": "height_lock",

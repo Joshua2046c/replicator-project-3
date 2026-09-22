@@ -80,7 +80,7 @@
       "source": "default"
     },
     "peg_engagement_mm": {
-      "value": 11,
+      "value": 7,
       "source": "default"
     },
     "prototype_material": {
@@ -121,6 +121,34 @@
     },
     "back_direction": {
       "value": "-X，碗口较高侧为背面",
+      "source": "default"
+    },
+    "support_surface": {
+      "value": "圆柱顶部承托台面与碗底同倾角，碗底配匹配凹槽",
+      "source": "user"
+    },
+    "base_transition": {
+      "value": "立柱与底盘以顺滑圆弧衔接",
+      "source": "user"
+    },
+    "base_transition_radius_mm": {
+      "value": 19,
+      "source": "default"
+    },
+    "support_recess": {
+      "value": {
+        "diameter_mm": 60.6,
+        "center_depth_mm": 2,
+        "angle_deg": 10
+      },
+      "source": "default"
+    },
+    "support_platform_diameter_mm": {
+      "value": 60,
+      "source": "default"
+    },
+    "bowl_floor_thickness_mm": {
+      "value": 6.5,
       "source": "default"
     }
   },

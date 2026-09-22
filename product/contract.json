@@ -14,7 +14,7 @@
     {
       "id": "bowl_detach",
       "kind": "internal_fit",
-      "description": "16 mm方榫与16.5 mm盲孔，11 mm插入，碗可向上拔出",
+      "description": "16 mm顶部方榫与16.5 mm盲孔；圆柱承托面倾角10度，与碗底凹槽同角度贴合，保持竖直拔出",
       "source": "user_requested",
       "required": true
     },
@@ -44,6 +44,12 @@
       "source": "user_requested",
       "description": "圆柱、方榫、去除方块及背面螺纹要求",
       "path": "product/references/uploads/20260922T115012765Z-1-mark.png"
+    },
+    {
+      "id": "inclined_seat_markup",
+      "source": "user_requested",
+      "description": "承托面倾斜、碗底匹配凹槽及底座圆弧衔接",
+      "path": "product/references/uploads/20260922T123245362Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -73,7 +79,8 @@
         "reference_ids": [
           "reference_image_1",
           "reference_image_2",
-          "round_mast_markup"
+          "round_mast_markup",
+          "inclined_seat_markup"
         ]
       }
     ]

@@ -2,31 +2,31 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "827fc493dee6ab95d2beb2ac4a317e38059ef86b207d8cf26461fbeaeaf2c624",
+  "requirements_digest": "3d2e2ef01e248414e3af12a700d2a4fed89a0850a90b171f1579a094f8edebdc",
   "items": [
     {
       "id": "base",
-      "name": "圆底座与圆孔套筒，背面直接内螺纹",
+      "name": "圆弧过渡圆底座与背面内螺纹",
       "quantity": 1,
-      "part_number": "custom-base-v2",
+      "part_number": "custom-base-v3",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     },
     {
       "id": "mast",
-      "name": "光滑圆升降柱与顶部方榫",
+      "name": "光滑圆柱、10度斜承托面及顶部方榫",
       "quantity": 1,
-      "part_number": "custom-mast-v2",
+      "part_number": "custom-mast-v3",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     },
     {
       "id": "bowl",
-      "name": "底部圆形加厚的可拆斜碗",
+      "name": "匹配斜面浅凹槽的可拆斜碗",
       "quantity": 1,
-      "part_number": "custom-bowl-v2",
+      "part_number": "custom-bowl-v3",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
