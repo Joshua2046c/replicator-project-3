@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "110–150 mm圆柱连续升降斜口猫碗，顶部方榫与背面直接螺纹锁紧",
+  "summary": "约123.8–163.8 mm圆柱连续升降深斜口猫碗，顶部方榫与背面直接螺纹锁紧",
   "required_interfaces": [
     {
       "id": "round_slide",

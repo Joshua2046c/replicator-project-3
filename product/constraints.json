@@ -25,7 +25,11 @@
     "pocket_roof_relative_z": 3,
     "minimum_pocket_closing_wall": 2.145575,
     "side_blend_radius": 12,
-    "nominal_cavity_depth": 25.5
+    "nominal_cavity_depth": 25.5,
+    "rim_height_range_at_existing_travel": [
+      123.7873085,
+      163.7873085
+    ]
   },
   "base": {
     "diameter": 160,
@@ -102,11 +106,6 @@
       "id": "thread_assembly_runtime",
       "resolved_for_cad": false,
       "note": "Engaged screw placement repeatedly timed out at180s; rear exploded display exported, not assembled-thread verification"
-    },
-    {
-      "id": "deeper_bowl_total_height",
-      "resolved_for_cad": false,
-      "note": "Only bowl changed: current highest rim143.7873, at existing travel ends123.7873–163.7873; user110–150 requirement unchanged pending adjudication."
     }
   ]
 }

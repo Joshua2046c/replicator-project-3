@@ -10,8 +10,8 @@
     },
     "height_range_mm": {
       "value": [
-        110,
-        150
+        123.8,
+        163.8
       ],
       "source": "user"
     },

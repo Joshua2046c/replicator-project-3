@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "eede28495a4db5fcc51ac8531ca0c606d47390f73149e959804dc7ba0c17a52a",
+  "requirements_digest": "4d79b0b87e411b5dde52b3c80315f5cfd63992259584cb3557be7dec209a0b12",
   "items": [
     {
       "id": "base",
