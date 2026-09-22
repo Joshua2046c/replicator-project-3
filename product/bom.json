@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "3d2e2ef01e248414e3af12a700d2a4fed89a0850a90b171f1579a094f8edebdc",
+  "requirements_digest": "eede28495a4db5fcc51ac8531ca0c606d47390f73149e959804dc7ba0c17a52a",
   "items": [
     {
       "id": "base",
@@ -24,9 +24,9 @@
     },
     {
       "id": "bowl",
-      "name": "匹配斜面浅凹槽的可拆斜碗",
+      "name": "32 mm深圆角可拆斜碗，保留斜凹槽接口",
       "quantity": 1,
-      "part_number": "custom-bowl-v3",
+      "part_number": "custom-bowl-v4",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []

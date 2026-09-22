@@ -50,6 +50,12 @@
       "source": "user_requested",
       "description": "承托面倾斜、碗底匹配凹槽及底座圆弧衔接",
       "path": "product/references/uploads/20260922T123245362Z-1-mark.png"
+    },
+    {
+      "id": "deeper_bowl_side_reference",
+      "source": "user_requested",
+      "description": "黄色碗侧视轮廓；仅加深碗，其余不动",
+      "path": "product/references/uploads/20260922T125215893Z-1-image.png"
     }
   ],
   "assembly_story": {
@@ -80,7 +86,8 @@
           "reference_image_1",
           "reference_image_2",
           "round_mast_markup",
-          "inclined_seat_markup"
+          "inclined_seat_markup",
+          "deeper_bowl_side_reference"
         ]
       }
     ]

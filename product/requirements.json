@@ -40,7 +40,7 @@
       "source": "default"
     },
     "bowl_outer_depth_mm": {
-      "value": 18,
+      "value": 32,
       "source": "default"
     },
     "bowl_bottom_diameter_mm": {
@@ -150,6 +150,14 @@
     "bowl_floor_thickness_mm": {
       "value": 6.5,
       "source": "default"
+    },
+    "bowl_side_blend_radius_mm": {
+      "value": 12,
+      "source": "default"
+    },
+    "bowl_deepen_scope": {
+      "value": "参考黄色碗侧视图加深顶部碗，其余零件、位置及底部连接不动",
+      "source": "user"
     }
   },
   "open_questions": []

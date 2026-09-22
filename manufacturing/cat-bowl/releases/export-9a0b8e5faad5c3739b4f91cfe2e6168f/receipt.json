@@ -1,34 +1,41 @@
 {
   "designId": "cat-bowl",
-  "buildNumber": 56,
-  "sourceHash": "b729e0fbb3f57fedb8cb92c83803a7b3f279acd1b2ca724f3c17598f70d32e90",
+  "buildNumber": 58,
+  "sourceHash": "786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933",
   "schemaVersion": 2,
-  "exportId": "export-5658ca4c863a41a60e84b73149b0bbde",
-  "generatedAt": "2026-09-22T12:46:14.408Z",
-  "designSha256": "e72150efa21c462712422cbdbd22a2639853d58577c723d6ac7669c4b1da1142",
+  "exportId": "export-9a0b8e5faad5c3739b4f91cfe2e6168f",
+  "generatedAt": "2026-09-22T12:54:19.370Z",
+  "designSha256": "8f6f22f233046c3df1e8f8e55b5ad777adaa924457a5dc3948930c9c1df62110",
   "role": "adjustable_cat_bowl",
-  "stateHash": "21c560833c26ba4251243a1e4d4c2c3e108caf1ffa9fc3417c018afe6bbd8a05",
+  "stateHash": "b549a02f953b6edc34d4fae25ce6aff055dc062afe1c669a23d69bffc62f4478",
   "stateManifest": {
     "schemaVersion": 2,
     "designId": "cat-bowl",
     "role": "adjustable_cat_bowl",
     "design": {
-      "buildNumber": 56,
-      "sourceHash": "b729e0fbb3f57fedb8cb92c83803a7b3f279acd1b2ca724f3c17598f70d32e90",
-      "designSha256": "5be17a5378be4130e5d9db37264dde1cc3cf70d6791a3955995ac295212ba86c",
-      "manifestSha256": "202f81b3250978140bb6b6a959af969dcc978b9d34a3aa1a86491e7be8a9a097",
-      "stepSha256": "7307f07f38db8f74817409a4f007c9f6daf01f807007bd15d1be2f05b477d926",
+      "buildNumber": 58,
+      "sourceHash": "786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933",
+      "designSha256": "f94a1b2e806e9d64a9918437aea683b682e5570bce1414fbd2d606d1b599f556",
+      "manifestSha256": "ec19757b82a628670cc25d133b0b8e4bf0eceef58f7064d65fcdd4370b439ec8",
+      "stepSha256": "4529da750c17ed34800499cde7cd3c8f564129312f457ef5416e4e63a95e2e4e",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/cat-bowl/README.md",
-      "sha256": "ef1cdb7b12da79e3ae290b2dd3755f21c8816898dde0988e007497ac42f8600f"
+      "sha256": "8e8d8d5b308ea49cbafecfe1ff95bfb54215f94949eabf49c685133818c10b44"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "59c726216f9151fcd782edb1d09ae34739c2b67ccf90c717b0bafdcba28c705b",
-      "designRequirementSha256": "31d75e1c68a473db78ee2c029873712b6b929b99b9e44504b6ab23fb3bf1aac0",
+      "artifactContractSha256": "1906d845587bd16dca2866477d1ad0ae668cf3594abbccc6357e53768f5a5e5e",
+      "designRequirementSha256": "4bd204bc26f9120b264665f236c50f2dd228b6fc3265d5c90f4f9822ddf162d0",
       "inputs": [
+        {
+          "role": "external-reference",
+          "id": "deeper_bowl_side_reference",
+          "path": "product/references/uploads/20260922T125215893Z-1-image.png",
+          "sha256": "204caddb0b5f2cd51cb6eefa55aff62958b72c097d3f89a8db1d243a3577a70d",
+          "sizeBytes": 53282
+        },
         {
           "role": "external-reference",
           "id": "inclined_seat_markup",
@@ -65,11 +72,11 @@
         "step"
       ]
     },
-    "stateHash": "21c560833c26ba4251243a1e4d4c2c3e108caf1ffa9fc3417c018afe6bbd8a05"
+    "stateHash": "b549a02f953b6edc34d4fae25ce6aff055dc062afe1c669a23d69bffc62f4478"
   },
   "buildArtifacts": {
-    "manifestSha256": "202f81b3250978140bb6b6a959af969dcc978b9d34a3aa1a86491e7be8a9a097",
-    "stepSha256": "7307f07f38db8f74817409a4f007c9f6daf01f807007bd15d1be2f05b477d926"
+    "manifestSha256": "ec19757b82a628670cc25d133b0b8e4bf0eceef58f7064d65fcdd4370b439ec8",
+    "stepSha256": "4529da750c17ed34800499cde7cd3c8f564129312f457ef5416e4e63a95e2e4e"
   },
   "exportAlgorithm": {
     "version": 1,
@@ -84,7 +91,7 @@
   "assetHashes": {},
   "shapeHashes": {
     "base": "93e6f195bbcaa98810eef3fee008866d6d174d2039b1056fc45e8082fbb9b413",
-    "bowl": "adba33fa454914167d49bb5fab159db600d44c1df0be8e65cf330d1ffe775184",
+    "bowl": "563f589b74999e7cc8d26f5e2cd4df52be5ea5d404be26d187af497f9dbf22a7",
     "lock_screw": "a21fbe65a08b77082688070edc3b7a70bd60c63a7d0012e22cd454964b58c56f",
     "mast": "2a3cdd4b6fdfa76393e71606397029d7143749501efa99f8a2c99dd7bb679041"
   },
@@ -97,10 +104,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/cat-bowl/releases/export-5658ca4c863a41a60e84b73149b0bbde/model.step",
+      "path": "manufacturing/cat-bowl/releases/export-9a0b8e5faad5c3739b4f91cfe2e6168f/model.step",
       "role": "model/step",
-      "sha256": "7307f07f38db8f74817409a4f007c9f6daf01f807007bd15d1be2f05b477d926",
-      "sizeBytes": 2247252
+      "sha256": "4529da750c17ed34800499cde7cd3c8f564129312f457ef5416e4e63a95e2e4e",
+      "sizeBytes": 2245339
     }
   ],
   "interference": {
@@ -122,14 +129,14 @@
     "algorithm": "hmac-sha256",
     "keyId": "2d4c38043f1eec23cacc7cc251ac14d3",
     "projectId": "e0aea0f9-5d34-41e5-ae26-a525611bdb29",
-    "receiptPath": "manufacturing/cat-bowl/releases/export-5658ca4c863a41a60e84b73149b0bbde/receipt.json",
-    "payloadSha256": "b2b85e74da7c4a1913aeca9910ec7d9646872d7d6de1c9201a1b7231c47187ab",
-    "mac": "a027cc880262756d5f8f15c47c97e679ee10e8be5386a9bdc58bf26a0b961512"
+    "receiptPath": "manufacturing/cat-bowl/releases/export-9a0b8e5faad5c3739b4f91cfe2e6168f/receipt.json",
+    "payloadSha256": "8ed042cf9a3649fc1c9b76a676862894a95479a05ba5fca6b87e497db9a49f36",
+    "mac": "ae4d4453b284e575b6e3544ca27e9acfc0d6d8c1b35380183b4774a9763d9ef1"
   },
   "status": "reviewed",
   "review": {
-    "reviewId": "review-56-b23502d4-61e8-42ce-a8a8-2c2b929aa4c6",
-    "path": ".work/builds/cad/cat-bowl/reviews/review-56-b23502d4-61e8-42ce-a8a8-2c2b929aa4c6/receipt.json",
-    "sha256": "a15eb08b353ef2c81a5653d10d352d98e921df4edb637075047833b2f85c0889"
+    "reviewId": "review-58-15889ada-b5c1-4e39-9b93-8105dadc2d36",
+    "path": ".work/builds/cad/cat-bowl/reviews/review-58-15889ada-b5c1-4e39-9b93-8105dadc2d36/receipt.json",
+    "sha256": "a7916c5f8f2e0df95e0a2cb7b05c7e90cc772beebb8778c1c1d3da8070c12532"
   }
 }

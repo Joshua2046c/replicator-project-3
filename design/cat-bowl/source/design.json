@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 56,
-  "sourceHash": "b729e0fbb3f57fedb8cb92c83803a7b3f279acd1b2ca724f3c17598f70d32e90",
+  "buildNumber": 58,
+  "sourceHash": "786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -120,7 +120,7 @@
       "target": "bowl",
       "label": "匹配斜台凹槽可拆碗",
       "kind": "generated",
-      "shapeHash": "adba33fa454914167d49bb5fab159db600d44c1df0be8e65cf330d1ffe775184",
+      "shapeHash": "563f589b74999e7cc8d26f5e2cd4df52be5ea5d404be26d187af497f9dbf22a7",
       "transform": {
         "positionMm": [
           0,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T12:46:14.408Z",
+  "updatedAt": "2026-09-22T12:54:19.370Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -199,14 +199,14 @@
     "bowl": {
       "bowl_diameter": 140,
       "bowl_bottom_diameter": 90,
-      "bowl_depth": 18,
+      "bowl_depth": 32,
       "bowl_wall": 3,
       "bowl_tilt_deg": 10,
       "bowl_socket_outer": 30,
       "bowl_socket_inner": 16.5,
       "bowl_socket_drop": 14,
       "bowl_socket_depth": 8,
-      "bowl_inner_fillet": 2,
+      "bowl_inner_fillet": 12,
       "bowl_socket_upper_diameter": 60,
       "bowl_seat_center_rise": 9,
       "bowl_recess_center_depth": 2,

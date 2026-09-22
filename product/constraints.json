@@ -7,7 +7,7 @@
   "bowl": {
     "diameter": 140,
     "bottom_diameter": 90,
-    "depth": 18,
+    "depth": 32,
     "wall": 3,
     "angle_deg": 10,
     "bottom_center_z_min": 80.11808800909513,
@@ -23,7 +23,9 @@
     "recess_center_depth": 2,
     "floor_thickness": 6.5,
     "pocket_roof_relative_z": 3,
-    "minimum_pocket_closing_wall": 2.145575
+    "minimum_pocket_closing_wall": 2.145575,
+    "side_blend_radius": 12,
+    "nominal_cavity_depth": 25.5
   },
   "base": {
     "diameter": 160,
@@ -100,6 +102,11 @@
       "id": "thread_assembly_runtime",
       "resolved_for_cad": false,
       "note": "Engaged screw placement repeatedly timed out at180s; rear exploded display exported, not assembled-thread verification"
+    },
+    {
+      "id": "deeper_bowl_total_height",
+      "resolved_for_cad": false,
+      "note": "Only bowl changed: current highest rim143.7873, at existing travel ends123.7873–163.7873; user110–150 requirement unchanged pending adjudication."
     }
   ]
 }
