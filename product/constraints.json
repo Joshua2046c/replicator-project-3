@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "units": "mm",
+  "source": "default",
+  "frame": "Z up, base bottom Z0, tilt about Y",
+  "bowl": {
+    "diameter": 140,
+    "bottom_diameter": 90,
+    "depth": 18,
+    "wall": 3,
+    "angle_deg": 10,
+    "bottom_center_z_min": 80.11808800909513,
+    "socket_outer": 30,
+    "socket_inner": 16.5,
+    "socket_depth": 12,
+    "socket_bottom_relative_z": -14,
+    "socket_shoulder_width": 22,
+    "socket_bottom_relief": 0.8
+  },
+  "base": {
+    "diameter": 160,
+    "thickness": 8,
+    "sleeve_od": 40,
+    "sleeve_top_z": 66,
+    "square_bore": 22.6,
+    "bore_floor_z": 4
+  },
+  "mast": {
+    "width": 22,
+    "body_length": 62.11808800909513,
+    "bottom_z_min": 4,
+    "bottom_z_max": 44,
+    "peg_width": 16,
+    "peg_height": 11,
+    "overlap_at_max": 22
+  },
+  "lock": {
+    "standard": "ISO4762 M5-0.8x16 + ISO4032 M5-0.8",
+    "screw_axis": "X",
+    "center_z": 54,
+    "screw_underhead_x": 27,
+    "tip_x": 11,
+    "nut_axial_start_x": 16,
+    "nut_af": 8,
+    "nut_thickness": 4.7,
+    "nut_slot_width": 8.6,
+    "nut_slot_axial": 5.3,
+    "bore_diameter": 5.6
+  },
+  "connections": [
+    {
+      "id": "square_slide",
+      "implementation": "free",
+      "reason": "sliding square fit; no screw thread"
+    },
+    {
+      "id": "bowl_detach",
+      "implementation": "free",
+      "reason": "vertical square peg with gravity shoulder seating"
+    },
+    {
+      "id": "height_lock",
+      "implementation": "free",
+      "reason": "make_screw_joint_v1 strategy=captive_nut raised ScrewJointNotApplicableV1 in committed base cell; custom top-loading nut pocket and clearance bore, verified imported ISO hardware"
+    }
+  ],
+  "risks": [
+    {
+      "id": "load",
+      "resolved_for_cad": true,
+      "note": "load and tip stability not physically tested"
+    },
+    {
+      "id": "travel",
+      "resolved_for_cad": true,
+      "note": "engraved limit line; not a captive anti-pullout mechanism"
+    }
+  ]
+}

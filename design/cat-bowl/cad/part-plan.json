@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "catalogFingerprint": "7b37f82b4c14c2268f0837cffcfcc95e78d65368c4c9b6374739272e6df1f70e",
+  "items": [
+    {
+      "id": "lock_screw",
+      "status": "selected",
+      "match": "exact",
+      "catalogId": "bd-warehouse:bd_warehouse.fastener.SocketHeadCapScrew",
+      "parameters": {
+        "size": "M5-0.8",
+        "length": 16,
+        "fastener_type": "iso4762",
+        "simple": true
+      }
+    },
+    {
+      "id": "lock_nut",
+      "status": "selected",
+      "match": "exact",
+      "catalogId": "bd-warehouse:bd_warehouse.fastener.HexNut",
+      "parameters": {
+        "size": "M5-0.8",
+        "fastener_type": "iso4032",
+        "simple": true
+      }
+    }
+  ],
+  "unresolvedItems": []
+}

@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "artifact_level": "assembly",
+  "deliverable_intent": "fit_check",
+  "summary": "参照图片的110–150 mm方柱升降斜口猫碗装配样机",
+  "required_interfaces": [
+    {
+      "id": "square_slide",
+      "kind": "internal_fit",
+      "description": "22 mm方柱与22.6 mm方孔，40 mm行程；最高档导向长度22 mm",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "bowl_detach",
+      "kind": "internal_fit",
+      "description": "16 mm方榫与16.5 mm盲孔，11 mm插入，碗可向上拔出",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "height_lock",
+      "kind": "mechanical",
+      "description": "M5侧向顶紧螺丝与防转金属螺母，手托碗调节后锁紧",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "reference_image_1",
+      "source": "user_requested",
+      "description": "整体造型与高度标注",
+      "path": "product/references/uploads/20260922T112814810Z-1-image.png"
+    },
+    {
+      "id": "reference_image_2",
+      "source": "user_requested",
+      "description": "升降与螺丝锁紧参考",
+      "path": "product/references/uploads/20260922T112814810Z-2-image.png"
+    }
+  ],
+  "assembly_story": {
+    "installation": "装入侧面捕获螺母与螺丝；插入方柱，套上斜碗；手托碗调节到110–150 mm后拧紧",
+    "maintenance": "向上拔出碗；松开螺丝后拔出方柱清洁；螺母在拆解时注意收好",
+    "user_access": [
+      "侧面锁紧螺丝",
+      "顶部可拆碗"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "adjustable_cat_bowl",
+        "design_id": "cat-bowl",
+        "description": "猫碗、方柱、底座和锁紧五金装配",
+        "delivery_target": "fit_check",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "square_slide",
+          "bowl_detach",
+          "height_lock"
+        ],
+        "reference_ids": [
+          "reference_image_1",
+          "reference_image_2"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

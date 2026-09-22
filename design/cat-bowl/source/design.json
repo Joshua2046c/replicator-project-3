@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "buildNumber": 18,
+  "sourceHash": "7a634fab22a3c747732db5198eaf26c8617f7e7ea9131b329ceb59650838a063",
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "base",
+      "label": "base",
+      "cells": [
+        {
+          "id": "base",
+          "target": "base",
+          "order": 0,
+          "path": "design/cat-bowl/source/parts/base/000-base.py",
+          "sha256": "05572667a814d2f64d3843a30bbf4150327a1df96659cdeea4ead107a020dfde"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "mast",
+      "label": "mast",
+      "cells": [
+        {
+          "id": "mast",
+          "target": "mast",
+          "order": 0,
+          "path": "design/cat-bowl/source/parts/mast/000-mast.py",
+          "sha256": "08e30e45570be596d2f457967f3d93755a4d31fce8c4335e34fe90e9a309a862"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "bowl",
+      "label": "bowl",
+      "cells": [
+        {
+          "id": "bowl",
+          "target": "bowl",
+          "order": 0,
+          "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
+          "sha256": "a16ed6c61346fb29114765b1fb15b707edbe45df765647a1f1acad4eb7a87692"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "imports",
+      "label": "imports",
+      "cells": [
+        {
+          "id": "lock_screw",
+          "target": "imports",
+          "order": 0,
+          "path": "design/cat-bowl/source/parts/imports/000-lock_screw.py",
+          "sha256": "cf3646019d89c02072e72ee0bef9b8d4eb0a73f5501dea50b1a60e39ea6fc710"
+        },
+        {
+          "id": "lock_nut",
+          "target": "imports",
+          "order": 1,
+          "path": "design/cat-bowl/source/parts/imports/001-lock_nut.py",
+          "sha256": "6c36f05b7dc0cd9e1343b26728ea8b935272067abc35f2c95462b0880146832f"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "base",
+      "target": "base",
+      "label": "圆底座与套筒",
+      "kind": "generated",
+      "shapeHash": "92e382baf1ab48a7532972d485a5f594546bb1a136f23a8931e429b09c1f8ddc",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "mast",
+      "target": "mast",
+      "label": "方形升降柱",
+      "kind": "generated",
+      "shapeHash": "058d8c33b91f11b925be4d7df00f6522fdbaa12cc96e1fce8d38ad7fbd9e54c7",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          24
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "bowl",
+      "target": "bowl",
+      "label": "可拆倾斜碗",
+      "kind": "generated",
+      "shapeHash": "8ce65a6f0a478233bec26dded12c67ecbe776a60c7c6f7bd39fcd9c7067fe2ef",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          100.11808800909513
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "lock_nut",
+      "target": "imports",
+      "label": "M5捕获螺母",
+      "kind": "imported",
+      "shapeHash": "c7fc13c0af81c0e258960a92882592996d27483b1c3679d9aa4aeb8803cf2e7f",
+      "transform": {
+        "positionMm": [
+          16,
+          0,
+          54
+        ],
+        "rotationDeg": [
+          0,
+          90,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "lock_screw",
+      "target": "imports",
+      "label": "M5锁紧螺丝",
+      "kind": "imported",
+      "shapeHash": "440c6b9fbfb0dd1ec086beb85326144eaf7d5173b5824b938ad0068eaa39877a",
+      "transform": {
+        "positionMm": [
+          27,
+          0,
+          54
+        ],
+        "rotationDeg": [
+          0,
+          90,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [
+    {
+      "id": "lock_screw",
+      "kind": "step",
+      "path": "design/cat-bowl/source/assets/307b70bffb03bb4668619b15727a61930497df1d98840932578788b208d3a275.step",
+      "sha256": "307b70bffb03bb4668619b15727a61930497df1d98840932578788b208d3a275",
+      "label": "M5锁紧螺丝",
+      "provenance": {
+        "sourcePath": ".work/cache/cad-catalog/bd-warehouse/6636b447c424599ae32e1764a5e958dff768a3af29e434caee0763783a0a964e.step",
+        "provider": "bd-warehouse",
+        "sourceVersion": "0.2.0",
+        "license": "Apache-2.0",
+        "declaredSha256": "307b70bffb03bb4668619b15727a61930497df1d98840932578788b208d3a275"
+      }
+    },
+    {
+      "id": "lock_nut",
+      "kind": "step",
+      "path": "design/cat-bowl/source/assets/68fdb6a8576a829bc3927712fcb317a8540ddc55636aa9a20204f7ac41a29457.step",
+      "sha256": "68fdb6a8576a829bc3927712fcb317a8540ddc55636aa9a20204f7ac41a29457",
+      "label": "M5捕获螺母",
+      "provenance": {
+        "sourcePath": ".work/cache/cad-catalog/bd-warehouse/f2aba2c4b7ef89cd76acece4a81288d7b8c00ebbcf35ac2c9c6f695360e9ca72.step",
+        "provider": "bd-warehouse",
+        "sourceVersion": "0.2.0",
+        "license": "Apache-2.0",
+        "declaredSha256": "68fdb6a8576a829bc3927712fcb317a8540ddc55636aa9a20204f7ac41a29457"
+      }
+    }
+  ],
+  "fits": [],
+  "updatedAt": "2026-09-22T11:41:08.536Z",
+  "parameters": {
+    "base": {
+      "base_diameter": 160,
+      "base_thickness": 8,
+      "base_sleeve_height": 66,
+      "base_sleeve_diameter": 40,
+      "base_square_bore": 22.6,
+      "base_bore_floor": 4,
+      "base_flare_radius": 39,
+      "base_flare_height": 18,
+      "base_lock_height": 54,
+      "base_lock_outer_x": 24,
+      "base_lock_lug_width": 16,
+      "base_lock_lug_height": 16,
+      "base_lock_clearance": 5.6,
+      "base_nut_clearance": 0.3,
+      "base_nut_start_x": 16,
+      "base_edge_radius": 1.5
+    },
+    "mast": {
+      "mast_width": 22,
+      "mast_body_length": 62.11808800909513,
+      "mast_peg_width": 16,
+      "mast_peg_height": 11,
+      "mast_edge_chamfer": 0.6,
+      "mast_max_line_z": 22,
+      "mast_mark_pitch": 10,
+      "mast_mark_width": 9,
+      "mast_mark_height": 0.6,
+      "mast_mark_depth": 0.35
+    },
+    "bowl": {
+      "bowl_diameter": 140,
+      "bowl_bottom_diameter": 90,
+      "bowl_depth": 18,
+      "bowl_wall": 3,
+      "bowl_tilt_deg": 10,
+      "bowl_socket_outer": 30,
+      "bowl_socket_inner": 16.5,
+      "bowl_socket_drop": 14,
+      "bowl_socket_depth": 12,
+      "bowl_inner_fillet": 2,
+      "bowl_socket_shoulder_width": 22,
+      "bowl_socket_bottom_relief": 0.8
+    },
+    "imports": {}
+  }
+}
