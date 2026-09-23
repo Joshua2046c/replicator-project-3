@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 75,
-  "sourceHash": "ef43d5e86e3eb901057ddc9f1855579181b8759e8f8990eda3da79b8ee0f7c4d",
+  "buildNumber": 85,
+  "sourceHash": "1cb1fa0a8cee918e35bd7d5adbfee535a1ef53979fd2be798d9e9a3d19977b48",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -120,7 +120,7 @@
       "target": "bowl",
       "label": "轻起伏五瓣花口碗",
       "kind": "generated",
-      "shapeHash": "4059f0741499b383a9bde97e23ba5e416eac314b3541c3237039de3a1d49d6af",
+      "shapeHash": "8be427340894742601fcc95ed0f8e4f577f560556fb15e4ef88ddc88d88b8fa0",
       "transform": {
         "positionMm": [
           0,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T13:53:49.924Z",
+  "updatedAt": "2026-09-23T14:36:35.731Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -221,10 +221,10 @@
       "bowl_recess_min_wall": 3,
       "bowl_floor_thickness": 6.5,
       "bowl_seat_diameter": 60,
-      "bowl_rim_petals": 5,
+      "bowl_rim_petals": 6,
       "bowl_rim_radial_relief": 6,
       "bowl_rim_transition_height": 12,
-      "bowl_rim_phase_deg": 0
+      "bowl_rim_phase_deg": 30
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,

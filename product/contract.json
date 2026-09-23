@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "约123.8–163.8 mm五档升降猫碗，轻起伏五瓣花口、背面五瓣手拧锁紧",
+  "summary": "参考图宽圆花口升降猫碗，原五档机构和五瓣手拧头",
   "required_interfaces": [
     {
       "id": "round_slide",
@@ -76,10 +76,10 @@
       "path": "product/references/uploads/20260923T133714468Z-1-mark.png"
     },
     {
-      "id": "soft_flower_bowl_markup",
+      "id": "rounded_bowl_photo",
       "source": "user_requested",
-      "description": "碗口改为五瓣花朵，略微凸出，仅轻微起伏",
-      "path": "product/references/uploads/20260923T134729778Z-1-mark.png"
+      "description": "当前碗形参考照片，取代前面的花瓣次数试验及临时恢复圆碗方向",
+      "path": "product/references/uploads/20260923T143207016Z-1-image.png"
     }
   ],
   "assembly_story": {
@@ -96,7 +96,7 @@
       {
         "role": "adjustable_cat_bowl",
         "design_id": "cat-bowl",
-        "description": "轻起伏五瓣花口斜碗、圆柱升降支撑、圆底座和背面手拧螺丝",
+        "description": "参考照片轮廓的宽圆花口斜碗及原升降底座",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
@@ -115,7 +115,7 @@
           "five_detents_knob_markup",
           "thicker_thread_markup",
           "flower_knob_markup",
-          "soft_flower_bowl_markup"
+          "rounded_bowl_photo"
         ]
       }
     ]
