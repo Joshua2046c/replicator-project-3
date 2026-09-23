@@ -2,13 +2,13 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "52c95270da0f05db063d35473492fae3a6daba5d71c532b5a02e4669dd696042",
+  "requirements_digest": "3c5bf1d66a099d18af2e50739ba9571cda59b077461d6ea1834fb5245489d71c",
   "items": [
     {
       "id": "base",
-      "name": "圆弧过渡圆底座与背面内螺纹",
+      "name": "圆弧过渡底座与背面M6x1补偿内螺纹",
       "quantity": 1,
-      "part_number": "custom-base-v3",
+      "part_number": "custom-base-v4-M6",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -33,9 +33,9 @@
     },
     {
       "id": "lock_screw",
-      "name": "28 mm六瓣手拧螺丝，M5x0.8×12名义螺杆",
+      "name": "28 mm六瓣手拧螺丝，M6x1螺纹与5 mm定位端",
       "quantity": 1,
-      "part_number": "custom-knob-M5x12-v1",
+      "part_number": "custom-knob-M6x12-v2",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -61,7 +61,7 @@
     {
       "id": "thread_mating",
       "severity": "advisory",
-      "description": "本次杆体采用小径简化螺纹表示用于位置检查；外螺纹牙形不交付，不证明真实旋合；需M5螺纹实物试配"
+      "description": "本次建模M6x1内外螺旋牙形；PETG内螺纹补偿0.45 mm为默认试配值，真实锁紧及磨损需试验"
     }
   ]
 }

@@ -1,5 +1,4 @@
 from math import sin,cos,pi
-from bd_warehouse.fastener import SocketHeadCapScrew
 from bd_warehouse.thread import IsoThread
 phase=param('lock_screw_thread_phase_deg',0.0)
 visible=param('lock_screw_visible_thread_length',12.0)
@@ -8,15 +7,18 @@ knob_h=param('lock_screw_knob_thickness',8.0)
 lobes=param('lock_screw_knob_lobes',6)
 scallop=param('lock_screw_knob_scallop_radius',4.0)
 edge=param('lock_screw_knob_edge_radius',0.8)
-# ISO M5x0.8x12 shaft: bd-warehouse exact catalog envelope. Custom knob, not ISO head.
-SIZE='M5-0.8'; MAJOR=5.0; PITCH=0.8; LENGTH=12.0
-s=SocketHeadCapScrew(size=SIZE,length=LENGTH,fastener_type='iso4762',simple=True)
-t=IsoThread(major_diameter=MAJOR,pitch=PITCH,length=LENGTH,external=True,simple=True)
-# Simplified minor-diameter threaded shaft, NOT literal smooth manufactured shank.
-core_limit=Cylinder(t.min_radius,LENGTH,align=(Align.CENTER,Align.CENTER,Align.MAX))
-core=s & core_limit
-TIP_LENGTH=1.5
-end=s & Pos(0,0,-LENGTH+TIP_LENGTH/2)*Box(MAJOR+2,MAJOR+2,TIP_LENGTH)
+tip_d=param('lock_screw_tip_diameter',5.0)
+tip_l=param('lock_screw_tip_length',2.0)
+# ISO M6-1 confirmed in bd-warehouse catalog. Custom integral head, not ISO4762 head.
+MAJOR=6.0; PITCH=1.0; LENGTH=12.0
+assert abs(visible-LENGTH)<1e-6
+thread=IsoThread(major_diameter=MAJOR,pitch=PITCH,length=LENGTH,external=True,end_finishes=('raw','raw'),align=(Align.CENTER,Align.CENTER,Align.MAX))
+# Same axial phase as the base's expanded screw negative. Clip raw end overruns.
+clip=Pos(0,0,-(LENGTH-tip_l)/2)*Box(MAJOR+2,MAJOR+2,LENGTH-tip_l)
+teeth=thread & clip
+core=Cylinder(thread.min_radius+0.01,LENGTH-tip_l,align=(Align.CENTER,Align.CENTER,Align.MAX))
+# Short reduced flat end fits existing5.8 mm pockets without changing the mast.
+end=Pos(0,0,-LENGTH)*Cylinder(tip_d/2,tip_l+0.05,align=(Align.CENTER,Align.CENTER,Align.MIN))
 knob=Cylinder(knob_d/2,knob_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
 for i in range(int(lobes)):
  a=2*pi*i/lobes
@@ -24,9 +26,9 @@ for i in range(int(lobes)):
 knob=fillet(knob.edges().filter_by(Axis.Z),edge)
 horizontal=[e for e in knob.edges() if e.bounding_box().size.Z<0.0001]
 knob=chamfer(horizontal,edge/2)
-body=core.fuse(end,knob)
+body=core.fuse(end,knob,*teeth.solids())
 body=Rot(0,0,phase)*body
 assert body.is_valid and len(body.solids())==1
 assert abs(body.bounding_box().min.Z+LENGTH)<0.001
-print('Nominal M5x0.8x12; simplified core diameter:',2*t.min_radius,'knob:',knob_d,knob_h)
-publish('lock_screw',body,'六瓣手拧螺丝（简化螺纹）')
+print('Modeled external M6x1, root diameter:',2*(thread.min_radius+0.01),'tip:',tip_d,tip_l)
+publish('lock_screw',body,'M6螺纹六瓣手拧螺丝')

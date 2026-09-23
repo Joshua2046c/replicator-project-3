@@ -69,8 +69,8 @@
     "detent_side": "-X"
   },
   "lock": {
-    "standard": "Custom 28 mm six-lobe knob; M5-0.8 nominal shank,12 mm underhead",
-    "receiver": "direct internal M5x0.8 thread in base",
+    "standard": "Custom six-lobe knob with modeled M6x1 external thread,12 mm underhead including2 mm tip",
+    "receiver": "direct M6x1 internal thread; female major cutter6.45 for PETG",
     "side": "rear -X",
     "center_z": 54,
     "screw_underhead_x": -24.8,
@@ -82,13 +82,19 @@
     "external_blocks": 0,
     "display_underhead_x": -24.8,
     "intended_underhead_x": -24.8,
-    "display_state": "nominal assembled at middle detent; simplified external thread",
+    "display_state": "assembled at middle detent; modeled inner and outer helices",
     "thread_mating_verified": false,
-    "thread_source": "bd_warehouse IsoThread M5x0.8; female negative diameter5.45",
+    "thread_source": "bd_warehouse IsoThread M6x1; female negative6.45; matched12 mm helix originX=-24.8",
     "knob_diameter": 28,
     "knob_thickness": 8,
-    "thread_representation": "simplified minor diameter shank; no external helical faces; not thread verification",
-    "nominal_pocket_contact_verified": true
+    "thread_representation": "modeled helical internal and external surfaces, external final2 mm reduced to5 mm flat tip",
+    "nominal_pocket_contact_verified": true,
+    "thread_geometry_clearance_verified": true,
+    "thread_pair_minimum_gap_mm": 0.1124,
+    "tip_diameter_mm": 5.0,
+    "tip_length_mm": 2.0,
+    "external_thread_major_mm": 6,
+    "thread_pitch_mm": 1
   },
   "connections": [
     {
@@ -104,7 +110,7 @@
     {
       "id": "height_lock",
       "implementation": "free_after_kit_rejection",
-      "reason": "Retain prior compensated female thread after explicit kit rejection. Custom knob on library nominal M5x12 shaft, reduced to ISO minor diameter for CAD checks, nominal flat tip contacts dimple. No full helical mating verification."
+      "reason": "M6 curved-mouth boss=none kit rejection; free implementation using library helical screw negative6.45 and M6 male with matching origin. Assembled geometry cleared; physical strength and fit untested."
     }
   ],
   "risks": [
@@ -119,9 +125,9 @@
       "note": "Five shallow points are not permanent pullout stops; hold bowl while loosening, retain22 mm insertion at highest point"
     },
     {
-      "id": "thread_representation",
+      "id": "thread_physical_fit",
       "resolved_for_cad": true,
-      "note": "Full external helix omitted in assembled fit-check STEP to avoid prior timeout; physical M5 thread engagement, torque and wear still untested"
+      "note": "Inner/outer M6 helices modeled, no static interference. PETG0.45 diametral compensation uncalibrated; no physical torque/wear/fit testing."
     }
   ],
   "height_stations": [

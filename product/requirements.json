@@ -88,7 +88,7 @@
       "source": "default"
     },
     "lock_hardware": {
-      "value": "custom six-lobe hand screw; M5x0.8 nominal thread,12 mm underhead length; simplified core CAD",
+      "value": "custom six-lobe knob with modeled M6x1 external thread, 12 mm underhead length including 5 mm diameter x2 mm locating tip; matching compensated base thread",
       "source": "default"
     },
     "delivery": {
@@ -190,6 +190,10 @@
         "lobes": 6
       },
       "source": "default"
+    },
+    "lock_shank_revision": {
+      "value": "标注处螺栓杆加粗，与底座采用螺纹连接",
+      "source": "user"
     }
   },
   "open_questions": []

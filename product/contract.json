@@ -21,7 +21,7 @@
     {
       "id": "height_lock",
       "kind": "mechanical",
-      "description": "六瓣手拧M5x0.8×12名义螺丝，直接旋入背面内螺纹，端面定位于5个浅凹点，无额外螺母或方块；螺杆以小径简化表示，真实旋合须实测",
+      "description": "六瓣手拧M6x1螺杆与底座直接内螺纹连接，包含内外螺旋牙形；杆头下总长12 mm，前端5 mm直径x2 mm短定位头配原五点；无螺母或外凸方块",
       "source": "user_requested",
       "required": true
     }
@@ -62,6 +62,12 @@
       "source": "user_requested",
       "description": "五档浅凹点与手拧螺栓头",
       "path": "product/references/uploads/20260923T123743808Z-1-mark.png"
+    },
+    {
+      "id": "thicker_thread_markup",
+      "source": "user_requested",
+      "description": "背面螺杆加粗且与底座螺纹连接",
+      "path": "product/references/uploads/20260923T125407893Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -94,7 +100,8 @@
           "round_mast_markup",
           "inclined_seat_markup",
           "deeper_bowl_side_reference",
-          "five_detents_knob_markup"
+          "five_detents_knob_markup",
+          "thicker_thread_markup"
         ]
       }
     ]

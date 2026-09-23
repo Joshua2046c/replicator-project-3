@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 67,
-  "sourceHash": "adc252275b6e6787ae697743da79408964ea606df0c431c4873ccfe76352c3c1",
+  "buildNumber": 69,
+  "sourceHash": "51c09bc58a5e5aa06391193cc4a81d0c37a05017a6bc051d82c45b3d41d35a98",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "base",
           "order": 0,
           "path": "design/cat-bowl/source/parts/base/000-base.py",
-          "sha256": "e6fb39b949d8614099b83336e31b7020e31bb72412cd0d9daf22f99fb2cc21bf"
+          "sha256": "d23c40b56e7944c4fa61f5da52b5fbcf0a2b0bb7c102b57f2f718679f3e43500"
         }
       ],
       "dependencies": []
@@ -56,7 +56,7 @@
           "target": "lock_hardware",
           "order": 0,
           "path": "design/cat-bowl/source/parts/lock_hardware/000-lock_hardware.py",
-          "sha256": "9532ad9cd28a43f048f3f56354b75f1a5c456d345304f06618ff451e6035c1d5"
+          "sha256": "b1e9e1e7ecaeabba3447ebd5f6ae13f69329bc55465ca3b5dac04db6ab2323dd"
         }
       ],
       "dependencies": []
@@ -66,9 +66,9 @@
     {
       "id": "base",
       "target": "base",
-      "label": "圆弧过渡圆底座",
+      "label": "M6内螺纹圆底座",
       "kind": "generated",
-      "shapeHash": "93e6f195bbcaa98810eef3fee008866d6d174d2039b1056fc45e8082fbb9b413",
+      "shapeHash": "916bc7a355dabac129eb822ca5339c3b3ac6e26ef19a544ca7e98e5f75b54abb",
       "transform": {
         "positionMm": [
           0,
@@ -144,9 +144,9 @@
     {
       "id": "lock_screw",
       "target": "lock_hardware",
-      "label": "六瓣手拧螺丝（简化螺纹）",
+      "label": "M6螺纹六瓣手拧螺丝",
       "kind": "generated",
-      "shapeHash": "4cd339c61bdd3a05ce8561f7ffe483d76695af5c22e668887c8e225264fb3881",
+      "shapeHash": "94e8f26c933440c3c1e837b844699808f5d3c8fa96201987c391ceece2eb0096",
       "transform": {
         "positionMm": [
           -24.8,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T12:47:17.661Z",
+  "updatedAt": "2026-09-23T12:57:51.444Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -184,7 +184,8 @@
       "base_edge_radius": 1.5,
       "base_round_bore": 28.6,
       "base_thread_engagement": 4.5,
-      "base_thread_diametral_compensation": 0.45
+      "base_thread_diametral_compensation": 0.45,
+      "base_thread_reference_x": -24.8
     },
     "mast": {
       "mast_width": 28,
@@ -228,7 +229,9 @@
       "lock_screw_knob_thickness": 8,
       "lock_screw_knob_lobes": 6,
       "lock_screw_knob_scallop_radius": 4,
-      "lock_screw_knob_edge_radius": 0.8
+      "lock_screw_knob_edge_radius": 0.8,
+      "lock_screw_tip_diameter": 5,
+      "lock_screw_tip_length": 2
     }
   }
 }
