@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 86,
-  "sourceHash": "d7f06025bce1d83209cdaa1545d1d8b2776b8515dfb58b9067639641d67fb665",
+  "buildNumber": 87,
+  "sourceHash": "864861a813a8221c837a6938f6ad4ed542f630876076f67d37db827b6c65827c",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -42,7 +42,7 @@
           "target": "bowl",
           "order": 0,
           "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
-          "sha256": "f858228765c3598720d87564706b9ef81e8e1a23d359af6a193814de3a40a40e"
+          "sha256": "9f6f7155f2318d8785c605da137c1848344f8129d311791c1ce2c938c555f826"
         }
       ],
       "dependencies": []
@@ -118,9 +118,9 @@
     {
       "id": "bowl",
       "target": "bowl",
-      "label": "立体六瓣花口碗",
+      "label": "宽圆六瓣加大碗",
       "kind": "generated",
-      "shapeHash": "09a70e7111bf0b73aa6a6869d9161558bc9174686e4c1c5bde3b29d0d4536bd8",
+      "shapeHash": "d0a297da3590c9cdbd87aa3b0c51808c5417222bf447abb3d3c3aca79960d142",
       "transform": {
         "positionMm": [
           0,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T14:47:27.490Z",
+  "updatedAt": "2026-09-23T14:55:53.244Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -225,7 +225,9 @@
       "bowl_rim_radial_relief": 6,
       "bowl_rim_transition_height": 12,
       "bowl_rim_phase_deg": 30,
-      "bowl_rim_vertical_relief": 10
+      "bowl_rim_vertical_relief": 10,
+      "bowl_body_scale": 1.05,
+      "bowl_petal_roundness": 2
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,

@@ -36,19 +36,19 @@
       "source": "default"
     },
     "bowl_outer_diameter_mm": {
-      "value": 140,
+      "value": 147,
       "source": "default"
     },
     "bowl_outer_depth_mm": {
-      "value": 32,
+      "value": 33.6,
       "source": "default"
     },
     "bowl_bottom_diameter_mm": {
-      "value": 90,
+      "value": 94.5,
       "source": "default"
     },
     "bowl_wall_mm": {
-      "value": 3,
+      "value": 3.15,
       "source": "default"
     },
     "bowl_tilt_deg": {
@@ -148,15 +148,15 @@
       "source": "default"
     },
     "bowl_floor_thickness_mm": {
-      "value": 6.5,
+      "value": 6.825,
       "source": "default"
     },
     "bowl_side_blend_radius_mm": {
-      "value": 12,
+      "value": 12.6,
       "source": "default"
     },
     "bowl_deepen_scope": {
-      "value": "保留32 mm深碗、斜凹槽与底座造型；升降柱增加5个浅凹点，螺丝改手拧头",
+      "value": "碗身在32 mm深版本基础上放大5%；保留斜凹槽、底座与原五档机构",
       "source": "user"
     },
     "height_detent_count": {
@@ -203,19 +203,19 @@
       "source": "user"
     },
     "bowl_rim_shape": {
-      "value": "参考20260923T144337916Z-1-image.png，花瓣造型从侧面看也要明显",
+      "value": "按20260923T145303689Z-1-mark.png标注将尖锐花瓣改圆润；保留侧面起伏",
       "source": "user"
     },
     "bowl_rim_relief_mm": {
-      "value": 6,
+      "value": 6.3,
       "source": "default"
     },
     "bowl_rim_transition_height_mm": {
-      "value": 12,
+      "value": 12.6,
       "source": "default"
     },
     "bowl_rim_interpretation": {
-      "value": "保留六瓣及10度倾角，在原宽圆碗壁上形成竖向起伏的口沿：瓣顶本地Z32、瓣谷Z22，平滑余弦过渡，后侧最高瓣顶不升高；原底部连接不变。照片仅指导造型，尺寸为默认值。",
+      "value": "六瓣，平方余弦轮廓拓宽瓣顶；圆润参数2。放大后瓣顶本地Z33.6、瓣谷Z23.1，倾角10度。原尺寸参数保留为基准尺寸，由bowl_body_scale=1.05派生实际尺寸。",
       "source": "default"
     },
     "bowl_rim_petal_count": {
@@ -223,7 +223,15 @@
       "source": "default"
     },
     "bowl_rim_vertical_relief_mm": {
-      "value": 10,
+      "value": 10.5,
+      "source": "default"
+    },
+    "bowl_enlargement_percent": {
+      "value": 5,
+      "source": "user"
+    },
+    "bowl_scale_scope": {
+      "value": "以碗身局部原点将碗身三轴尺寸增加5%，底部凹槽、方孔与装配位置保持原尺寸；底座和升降机构不放大",
       "source": "default"
     }
   },

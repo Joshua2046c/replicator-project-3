@@ -86,6 +86,12 @@
       "source": "user_requested",
       "description": "侧面清晰可见的高低起伏花瓣口沿；当前造型重点，不复制金属底脚",
       "path": "product/references/uploads/20260923T144337916Z-1-image.png"
+    },
+    {
+      "id": "rounder_larger_bowl_markup",
+      "source": "user_requested",
+      "description": "花瓣更圆润，碗身放大5%",
+      "path": "product/references/uploads/20260923T145303689Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -102,7 +108,7 @@
       {
         "role": "adjustable_cat_bowl",
         "design_id": "cat-bowl",
-        "description": "侧面可见高低起伏花瓣口沿的斜碗及原升降机构",
+        "description": "宽圆六瓣147 mm斜碗；高度要求冲突待用户决定",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
@@ -122,7 +128,8 @@
           "thicker_thread_markup",
           "flower_knob_markup",
           "rounded_bowl_photo",
-          "side_flower_reference"
+          "side_flower_reference",
+          "rounder_larger_bowl_markup"
         ]
       }
     ]
