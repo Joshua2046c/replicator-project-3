@@ -6,7 +6,7 @@
   "frame": "Z up; bowl tilts about Y; rear is -X (high rim side)",
   "bowl": {
     "diameter": 147,
-    "depth": 33.6,
+    "depth": 35.6,
     "wall": 3.15,
     "angle_deg": 10,
     "bottom_center_z_min": 80.11808800909513,
@@ -23,23 +23,23 @@
     "floor_thickness": 6.825,
     "pocket_roof_relative_z": 3,
     "minimum_pocket_closing_wall": 2.475589035275373,
-    "nominal_cavity_depth": 26.775,
+    "nominal_cavity_depth": 28.775,
     "rim_height_range_at_existing_travel": [
-      125.9707696688,
-      165.9707696688
+      127.940385174852,
+      167.940385174852
     ],
     "rim_shape": "six broad circular-arc vertical scallops on spherical bowl",
     "rim_petal_count": 6,
     "rim_crest_radius": 73.5,
     "rim_phase_deg": 30,
     "rim_vertical_relief": 4.2,
-    "rim_crest_z_local": 33.6,
-    "rim_valley_z_local": 29.4,
-    "nominal_cavity_depth_note": "26.775 mm center-floor to crest,22.575 mm to valley in bowl-local Z; not liquid fill capacity.",
+    "rim_crest_z_local": 35.6,
+    "rim_valley_z_local": 31.4,
+    "nominal_cavity_depth_note": "28.775 mm center-floor to crest,24.575 mm to valley in bowl-local Z; not liquid fill capacity.",
     "body_scale": 1.05,
     "body_profile": "spherical cap outer and inner; no separate flat bowl floor",
-    "outer_sphere_radius": 97.190625,
-    "inner_sphere_radius": 105.80808823529412,
+    "outer_sphere_radius": 93.674297752809,
+    "inner_sphere_radius": 100.38441572545612,
     "photo_arc_span": 0.96,
     "socket_reinforcement_height": 16.975,
     "wall_definition": "3.15 mm radial mouth thickness at crest plane; actual normal wall varies; not a constant-thickness shell."
@@ -146,6 +146,11 @@
       "id": "thread_physical_fit",
       "resolved_for_cad": true,
       "note": "Inner/outer M6 helices modeled, no static interference. PETG0.45 diametral compensation uncalibrated; no physical torque/wear/fit testing."
+    },
+    {
+      "id": "height_confirmation",
+      "resolved_for_cad": false,
+      "note": "Height requirement126–166 mm unchanged; current127.94–167.94 mm awaits choice."
     }
   ],
   "height_stations": [
@@ -153,31 +158,31 @@
       "station": 1,
       "mast_bottom_z": 4,
       "mast_pocket_local_z": 50,
-      "rim_max_z": 125.9707696688
+      "rim_max_z": 127.940385174852
     },
     {
       "station": 2,
       "mast_bottom_z": 14,
       "mast_pocket_local_z": 40,
-      "rim_max_z": 135.97076966880002
+      "rim_max_z": 137.940385174852
     },
     {
       "station": 3,
       "mast_bottom_z": 24,
       "mast_pocket_local_z": 30,
-      "rim_max_z": 145.97076966880002
+      "rim_max_z": 147.940385174852
     },
     {
       "station": 4,
       "mast_bottom_z": 34,
       "mast_pocket_local_z": 20,
-      "rim_max_z": 155.97076966880002
+      "rim_max_z": 157.940385174852
     },
     {
       "station": 5,
       "mast_bottom_z": 44,
       "mast_pocket_local_z": 10,
-      "rim_max_z": 165.97076966880002
+      "rim_max_z": 167.940385174852
     }
   ]
 }

@@ -40,7 +40,7 @@
       "source": "default"
     },
     "bowl_outer_depth_mm": {
-      "value": 33.6,
+      "value": 35.6,
       "source": "default"
     },
     "bowl_wall_mm": {
@@ -148,7 +148,7 @@
       "source": "default"
     },
     "bowl_deepen_scope": {
-      "value": "碗身在32 mm深版本基础上放大5%；保留斜凹槽、底座与原五档机构",
+      "value": "认可当前碗形，碗再改深一点点",
       "source": "user"
     },
     "height_detent_count": {
@@ -199,7 +199,7 @@
       "source": "user"
     },
     "bowl_rim_interpretation": {
-      "value": "以本轮照片为唯一碗形外观参考：连续圆弧碗壁和碗底、六个宽圆弧瓣顶、浅凹交界；不再采用锥壁加平方余弦深波浪。六瓣、球面曲率和4.2 mm瓣差为建模解释，照片不提供尺寸或隐藏面。保留147 mm外接圆、33.6 mm深度、10度倾角和原接口。",
+      "value": "以本轮照片为唯一碗形外观参考：连续圆弧碗壁和碗底、六个宽圆弧瓣顶、浅凹交界；不再采用锥壁加平方余弦深波浪。六瓣、球面曲率和4.2 mm瓣差为建模解释，照片不提供尺寸或隐藏面。保留147 mm外接圆、35.6 mm深度、10度倾角和原接口。",
       "source": "default"
     },
     "bowl_rim_petal_count": {
@@ -223,5 +223,10 @@
       "source": "default"
     }
   },
-  "open_questions": []
+  "open_questions": [
+    {
+      "id": "height_range_mm",
+      "question": "加深2 mm后最高口沿127.94–167.94 mm，原126–166 mm要求不变，待用户选择更新、恢复原深度或记录例外。"
+    }
+  ]
 }

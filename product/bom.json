@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "e5e2eb28929f84501be51a8ff15c4b2d1611f38838595ea6c4ded957b4f3107c",
+  "requirements_digest": "93b65c015517d8bb27446b34a66654e70b114927adfc788255249774ee3ee7ff",
   "items": [
     {
       "id": "base",
@@ -24,9 +24,9 @@
     },
     {
       "id": "bowl",
-      "name": "最新照片圆弧浅瓣碗，147 mm外接圆、33.6 mm深、原底部接口",
+      "name": "圆弧浅瓣碗，147 mm外接圆、35.6 mm深、原接口",
       "quantity": 1,
-      "part_number": "custom-bowl-v10-photo-spherical",
+      "part_number": "custom-bowl-v11-deeper-2mm",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -62,6 +62,11 @@
       "id": "thread_mating",
       "severity": "advisory",
       "description": "本次建模M6x1内外螺旋牙形；PETG内螺纹补偿0.45 mm为默认试配值，真实锁紧及磨损需试验"
+    },
+    {
+      "id": "height_confirmation",
+      "severity": "blocking",
+      "description": "当前127.94–167.94 mm与原用户126–166 mm要求不同，等待确认。"
     }
   ]
 }
