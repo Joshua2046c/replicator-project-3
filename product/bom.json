@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "3c5bf1d66a099d18af2e50739ba9571cda59b077461d6ea1834fb5245489d71c",
+  "requirements_digest": "3055f4a0e9f9930593b598537842f271e6f1923e0ea11a5f3ab44557ba69914c",
   "items": [
     {
       "id": "base",
@@ -33,9 +33,9 @@
     },
     {
       "id": "lock_screw",
-      "name": "28 mm六瓣手拧螺丝，M6x1螺纹与5 mm定位端",
+      "name": "28 mm五瓣花形手拧螺丝，M6x1螺纹与5 mm定位端",
       "quantity": 1,
-      "part_number": "custom-knob-M6x12-v2",
+      "part_number": "custom-knob-M6x12-v3-flower5",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []

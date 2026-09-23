@@ -88,7 +88,7 @@
       "source": "default"
     },
     "lock_hardware": {
-      "value": "custom six-lobe knob with modeled M6x1 external thread, 12 mm underhead length including 5 mm diameter x2 mm locating tip; matching compensated base thread",
+      "value": "custom five-petal knob with modeled M6x1 external thread, 12 mm underhead length including 5 mm diameter x2 mm locating tip; matching compensated base thread",
       "source": "default"
     },
     "delivery": {
@@ -168,7 +168,7 @@
       "source": "user"
     },
     "hand_knob": {
-      "value": "适合手拧的螺栓帽",
+      "value": "五瓣花朵外形的手拧螺帽",
       "source": "user"
     },
     "detent_pitch_mm": {
@@ -187,12 +187,19 @@
       "value": {
         "diameter_mm": 28,
         "thickness_mm": 8,
-        "lobes": 6
+        "lobes": 5,
+        "scallop_radius_mm": 6,
+        "edge_radius_mm": 3,
+        "end_chamfer_mm": 1.5
       },
       "source": "default"
     },
     "lock_shank_revision": {
       "value": "标注处螺栓杆加粗，与底座采用螺纹连接",
+      "source": "user"
+    },
+    "hand_knob_petal_count": {
+      "value": 5,
       "source": "user"
     }
   },

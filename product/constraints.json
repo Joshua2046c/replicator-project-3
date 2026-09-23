@@ -69,7 +69,7 @@
     "detent_side": "-X"
   },
   "lock": {
-    "standard": "Custom six-lobe knob with modeled M6x1 external thread,12 mm underhead including2 mm tip",
+    "standard": "Custom five-petal knob with modeled M6x1 external thread,12 mm underhead including2 mm tip",
     "receiver": "direct M6x1 internal thread; female major cutter6.45 for PETG",
     "side": "rear -X",
     "center_z": 54,
@@ -94,7 +94,12 @@
     "tip_diameter_mm": 5.0,
     "tip_length_mm": 2.0,
     "external_thread_major_mm": 6,
-    "thread_pitch_mm": 1
+    "thread_pitch_mm": 1,
+    "knob_lobes": 5,
+    "knob_shape": "five-petal flower",
+    "knob_scallop_radius": 6,
+    "knob_edge_radius": 3,
+    "knob_end_chamfer": 1.5
   },
   "connections": [
     {

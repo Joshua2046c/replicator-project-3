@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 69,
-  "sourceHash": "51c09bc58a5e5aa06391193cc4a81d0c37a05017a6bc051d82c45b3d41d35a98",
+  "buildNumber": 72,
+  "sourceHash": "3db32277e7ca6376ec886bdb749d9f55a797ab5f1ee3d326cef7a419e0601d97",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -146,7 +146,7 @@
       "target": "lock_hardware",
       "label": "M6螺纹六瓣手拧螺丝",
       "kind": "generated",
-      "shapeHash": "94e8f26c933440c3c1e837b844699808f5d3c8fa96201987c391ceece2eb0096",
+      "shapeHash": "7c27e6a8ebdde2beb4a193988f4f17d7b952ed85a6d99e8eb92aa0c4797de277",
       "transform": {
         "positionMm": [
           -24.8,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T12:57:51.444Z",
+  "updatedAt": "2026-09-23T13:40:06.918Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -227,9 +227,9 @@
       "lock_screw_visible_thread_length": 12,
       "lock_screw_knob_diameter": 28,
       "lock_screw_knob_thickness": 8,
-      "lock_screw_knob_lobes": 6,
-      "lock_screw_knob_scallop_radius": 4,
-      "lock_screw_knob_edge_radius": 0.8,
+      "lock_screw_knob_lobes": 5,
+      "lock_screw_knob_scallop_radius": 6,
+      "lock_screw_knob_edge_radius": 3,
       "lock_screw_tip_diameter": 5,
       "lock_screw_tip_length": 2
     }

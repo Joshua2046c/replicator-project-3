@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "约123.8–163.8 mm五档圆柱升降深斜口猫碗，背面六瓣手拧锁紧",
+  "summary": "约123.8–163.8 mm五档圆柱升降深斜口猫碗，背面五瓣花形手拧锁紧",
   "required_interfaces": [
     {
       "id": "round_slide",
@@ -21,7 +21,7 @@
     {
       "id": "height_lock",
       "kind": "mechanical",
-      "description": "六瓣手拧M6x1螺杆与底座直接内螺纹连接，包含内外螺旋牙形；杆头下总长12 mm，前端5 mm直径x2 mm短定位头配原五点；无螺母或外凸方块",
+      "description": "五瓣花形手拧M6x1螺杆与底座直接内螺纹连接，包含内外螺旋牙形；杆头下总长12 mm，前端5 mm直径x2 mm短定位头配原五点；无螺母或外凸方块",
       "source": "user_requested",
       "required": true
     }
@@ -68,10 +68,16 @@
       "source": "user_requested",
       "description": "背面螺杆加粗且与底座螺纹连接",
       "path": "product/references/uploads/20260923T125407893Z-1-mark.png"
+    },
+    {
+      "id": "flower_knob_markup",
+      "source": "user_requested",
+      "description": "手拧头改为五瓣花朵外形",
+      "path": "product/references/uploads/20260923T133714468Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "插入圆柱、套上斜碗；托住碗，对准背面凹点选择五档之一，再轻拧六瓣旋钮",
+    "installation": "插入圆柱、套上斜碗；托住碗，对准背面凹点选择五档之一，再轻拧五瓣花形旋钮",
     "maintenance": "托碗松螺丝，拔出碗与圆柱清洁",
     "user_access": [
       "背面锁紧螺丝",
@@ -101,7 +107,8 @@
           "inclined_seat_markup",
           "deeper_bowl_side_reference",
           "five_detents_knob_markup",
-          "thicker_thread_markup"
+          "thicker_thread_markup",
+          "flower_knob_markup"
         ]
       }
     ]
