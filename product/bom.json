@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "3055f4a0e9f9930593b598537842f271e6f1923e0ea11a5f3ab44557ba69914c",
+  "requirements_digest": "f165789edd744fdc23b4fc1b0d30e3cfe31b483e9bc8c59c401bfb68387fc5fb",
   "items": [
     {
       "id": "base",
@@ -24,9 +24,9 @@
     },
     {
       "id": "bowl",
-      "name": "32 mm深圆角可拆斜碗，保留斜凹槽接口",
+      "name": "32 mm深可拆斜碗，轻微五瓣花口，原斜凹槽接口",
       "quantity": 1,
-      "part_number": "custom-bowl-v4",
+      "part_number": "custom-bowl-v5-soft-flower",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []

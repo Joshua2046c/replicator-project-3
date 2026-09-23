@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 72,
-  "sourceHash": "3db32277e7ca6376ec886bdb749d9f55a797ab5f1ee3d326cef7a419e0601d97",
+  "buildNumber": 75,
+  "sourceHash": "ef43d5e86e3eb901057ddc9f1855579181b8759e8f8990eda3da79b8ee0f7c4d",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -42,7 +42,7 @@
           "target": "bowl",
           "order": 0,
           "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
-          "sha256": "c1b93738ae015684507a145510ec4a7554a85937bde075da4306562a8ae445e3"
+          "sha256": "708cf396837c7ecee8d8c641bb5c7c3dd7cbf71296ed9972102cddc1de86d12b"
         }
       ],
       "dependencies": []
@@ -118,9 +118,9 @@
     {
       "id": "bowl",
       "target": "bowl",
-      "label": "匹配斜台凹槽可拆碗",
+      "label": "轻起伏五瓣花口碗",
       "kind": "generated",
-      "shapeHash": "563f589b74999e7cc8d26f5e2cd4df52be5ea5d404be26d187af497f9dbf22a7",
+      "shapeHash": "4059f0741499b383a9bde97e23ba5e416eac314b3541c3237039de3a1d49d6af",
       "transform": {
         "positionMm": [
           0,
@@ -146,7 +146,7 @@
       "target": "lock_hardware",
       "label": "M6螺纹六瓣手拧螺丝",
       "kind": "generated",
-      "shapeHash": "7c27e6a8ebdde2beb4a193988f4f17d7b952ed85a6d99e8eb92aa0c4797de277",
+      "shapeHash": "5b84df63acefc06b0af618c4a804c75cc08ca485e1a3ae53bd3ae2f55ec397d1",
       "transform": {
         "positionMm": [
           -24.8,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T13:40:06.918Z",
+  "updatedAt": "2026-09-23T13:53:49.924Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -220,7 +220,11 @@
       "bowl_recess_radial_clearance": 0.3,
       "bowl_recess_min_wall": 3,
       "bowl_floor_thickness": 6.5,
-      "bowl_seat_diameter": 60
+      "bowl_seat_diameter": 60,
+      "bowl_rim_petals": 5,
+      "bowl_rim_radial_relief": 6,
+      "bowl_rim_transition_height": 12,
+      "bowl_rim_phase_deg": 0
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,

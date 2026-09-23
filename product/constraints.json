@@ -29,7 +29,15 @@
     "rim_height_range_at_existing_travel": [
       123.7873085,
       163.7873085
-    ]
+    ],
+    "rim_shape": "subtle five-petal radial outline on unchanged tilted rim plane",
+    "rim_petal_count": 5,
+    "rim_crest_radius": 70,
+    "rim_valley_radius": 64,
+    "rim_radial_relief": 6,
+    "rim_transition_height": 12,
+    "rim_transition_start_z_local": 20,
+    "rim_phase_deg": 0
   },
   "base": {
     "diameter": 160,

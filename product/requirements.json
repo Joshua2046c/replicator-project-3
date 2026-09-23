@@ -201,6 +201,22 @@
     "hand_knob_petal_count": {
       "value": 5,
       "source": "user"
+    },
+    "bowl_rim_shape": {
+      "value": "碗口边缘为五瓣花朵，每瓣略微凸出，仅轻微起伏，不要明显深凹",
+      "source": "user"
+    },
+    "bowl_rim_relief_mm": {
+      "value": 6,
+      "source": "default"
+    },
+    "bowl_rim_transition_height_mm": {
+      "value": 12,
+      "source": "default"
+    },
+    "bowl_rim_interpretation": {
+      "value": "俯视径向五瓣曲线；碗口仍在原10度倾斜平面内，不额外抬高花瓣。瓣尖半径70、瓣谷64 mm，碗底接口不变",
+      "source": "default"
     }
   },
   "open_questions": []
