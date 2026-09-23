@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "93b65c015517d8bb27446b34a66654e70b114927adfc788255249774ee3ee7ff",
+  "requirements_digest": "effffa3a2f3033a34cbc0e67ee486ad6fefe808a8fcc441d0de52c287ee80de3",
   "items": [
     {
       "id": "base",
@@ -62,11 +62,6 @@
       "id": "thread_mating",
       "severity": "advisory",
       "description": "本次建模M6x1内外螺旋牙形；PETG内螺纹补偿0.45 mm为默认试配值，真实锁紧及磨损需试验"
-    },
-    {
-      "id": "height_confirmation",
-      "severity": "blocking",
-      "description": "当前127.94–167.94 mm与原用户126–166 mm要求不同，等待确认。"
     }
   ]
 }

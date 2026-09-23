@@ -10,8 +10,8 @@
     },
     "height_range_mm": {
       "value": [
-        126.0,
-        166.0
+        128,
+        168
       ],
       "source": "user"
     },
@@ -223,10 +223,5 @@
       "source": "default"
     }
   },
-  "open_questions": [
-    {
-      "id": "height_range_mm",
-      "question": "加深2 mm后最高口沿127.94–167.94 mm，原126–166 mm要求不变，待用户选择更新、恢复原深度或记录例外。"
-    }
-  ]
+  "open_questions": []
 }

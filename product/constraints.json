@@ -146,11 +146,6 @@
       "id": "thread_physical_fit",
       "resolved_for_cad": true,
       "note": "Inner/outer M6 helices modeled, no static interference. PETG0.45 diametral compensation uncalibrated; no physical torque/wear/fit testing."
-    },
-    {
-      "id": "height_confirmation",
-      "resolved_for_cad": false,
-      "note": "Height requirement126–166 mm unchanged; current127.94–167.94 mm awaits choice."
     }
   ],
   "height_stations": [
