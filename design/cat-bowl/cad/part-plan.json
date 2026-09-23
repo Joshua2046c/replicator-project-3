@@ -5,15 +5,16 @@
     {
       "id": "lock_screw",
       "status": "selected",
-      "match": "exact",
+      "match": "custom",
       "catalogId": "bd-warehouse:bd_warehouse.fastener.SocketHeadCapScrew",
       "parameters": {
         "size": "M5-0.8",
         "length": 12,
         "fastener_type": "iso4762",
-        "simple": false
+        "simple": true
       },
-      "geometry_note": "Original 17-solid detailed catalog STEP acquired; final single-body screw uses same ISO4762 library head and ISO thread clipped to12mm; full threads shown exploded at rear, engagement unverified"
+      "geometry_note": "Catalog exact M5x12 shaft envelope only. Replace head by deliberately custom integral six-lobe28x8 knob; simplify thread to library minor diameter for affordable assembled geometry checks. Not a purchased ISO4762 head or ready-to-machine threaded STEP.",
+      "research": "Current catalog thumb search has no exact thumb knob; step.parts M5 star knob screw returned0. Deliberate custom geometry, not a vendor placeholder."
     }
   ],
   "unresolvedItems": []

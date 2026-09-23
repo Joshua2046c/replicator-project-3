@@ -1,25 +1,24 @@
-# 加深碗体 — Build58
+# 五档浅凹点与六瓣手拧头 — Build67
 
 ## 交付
-STEP：manufacturing/cat-bowl/releases/export-9a0b8e5faad5c3739b4f91cfe2e6168f/model.step
-SHA256：4529da750c17ed34800499cde7cd3c8f564129312f457ef5416e4e63a95e2e4e
-预览已更新。本次只修改碗的外深18→32 mm和根部圆角2→12 mm。32/R12为图片比例参考后的默认值，不是照片精确测量。
+STEP：manufacturing/cat-bowl/releases/export-8ccd5813a845a86f513a70043abeb548/model.step
+SHA256：0ab6fb7ce47bc8201befb4d0f6cf2fe916cac44fbc32040050f884f69dc7850a
+导出记录同目录receipt.json；预览由STEP刷新。独立检查返回No P0 or P1 findings。前一轮需求更新后的旧记录绑定失败已由本次新构建与新要求的handoff取代。
 
-## 检查
-- Git保存的Build56与当前源记录逐字段比较：base、mast、lock_screw对象（含形状哈希）完全不变；所有对象装配变换不变；全部参数只有bowl_depth与bowl_inner_fillet变化。
-- Workbench历史比较接口返回缺失构建manifest，未将其当作通过；上述源记录及导出记录哈希比较为替代证据。
-- 四个有效实体，六对零件无体积穿插；bowl/mast距离0，承托面接触；底部配合参数未变。
-- 碗口140 mm、倾角10度、底厚6.5 mm；名义中央内深由11.5 mm增到25.5 mm。R12使侧壁根部较圆润。
-- 当前碗口最高点143.7873085 mm；按同一40 mm升降行程推算端点123.7873–163.7873 mm。用户已明确选择保留加深碗和其余零件，总高要求更新为约123.8–163.8 mm；此项冲突已解决，螺丝未装配仍不代表整机验收通过。
+## 尺寸与几何检查
+- 5个浅凹点：局部Z10/20/30/40/50、直径5.8、深1.2 mm；入口0.35倒角。默认10 mm间距。
+- 由低至高1–5档：柱底Z4/14/24/34/44，匹配局部凹点Z50/40/30/20/10。逐项断言柱底+凹点=螺丝固定轴高54 mm，通过。碗口最高点约123.7873/133.7873/143.7873/153.7873/163.7873 mm。最高插入22 mm，完整行程40 mm。
+- Build63最低：4有效实体，6对无体积干涉；螺杆/柱为0距离接触；碗口Z123.7873085，底座/碗最小间隙1.3356 mm、旋钮/碗10.8167 mm。
+- Build65最高：4有效实体，无体积干涉、螺杆/柱0距离接触；碗口Z163.7873085。
+- Build67中间交付位置：4有效实体，6对无体积干涉；螺杆/柱及碗/承托台距离0。base/mast间隙0.3 mm；螺杆/底座0.235 mm是小径简化表示的间隙，不是真实牙面配合证明。第二、第四档为等距同形凹点中心的解析核对，未单独构建整机布尔检查。
+- 六瓣旋钮最大外径28、厚8、侧棱R0.8、端面倒角0.4。头下X=-24.8、端面X=-12.8；名义M5x0.8×12。
+- 与本次前Git提交逐项比较：base和bowl整个对象记录（含形状哈希、放置）、各自Python源代码完全一致。碗和底座未修改。顶部斜台、方榫尺寸原样保留。
 
 ## 视觉证据
-碗侧视：.work/cache/cad-workbench/designs/cat-bowl/observations/786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933/look-de3ed1280c73bc92a31e84ef/workbench_front.png
-碗等轴视：.work/cache/cad-workbench/designs/cat-bowl/observations/786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933/look-de3ed1280c73bc92a31e84ef/workbench_iso.png
+五点正视：.work/cache/cad-workbench/designs/cat-bowl/observations/adc252275b6e6787ae697743da79408964ea606df0c431c4873ccfe76352c3c1/look-3962ef99dbaa65e7e924ee00/workbench_left.png
+名义锁紧接触与旋钮：.work/cache/cad-workbench/designs/cat-bowl/observations/6bf11c97d6803159c2fd281f2bfa38d46e9e3a2a8c58e09bf599b753cbf20b4e/look-adb35b3bfeef9fd4cddf21f6/workbench_iso.png
+整体侧面：.work/cache/cad-workbench/designs/cat-bowl/observations/6bf11c97d6803159c2fd281f2bfa38d46e9e3a2a8c58e09bf599b753cbf20b4e/look-2298edc760364d613fe6e40d/workbench_front.png
 
-## 独立审查及遗留限制
-Build58审查仍指出P0：背面螺丝悬空，距离底座12.0021 mm，height_lock未装配。此为既有状态，本次遵照其余不动未修改螺丝或立柱。
-证据：.work/cache/cad-workbench/designs/cat-bowl/observations/786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933/look-8f03c01451f49988237f1510/workbench_front.png
-食品接触、实物锁紧、载荷、稳定性及打印配合均未测试。未切片、未打印。
-
-## 用户确认后的记录刷新限制
-用户已确认总高更新为约123.8–163.8 mm。几何仍为同一Build58，现有STEP与预览就是已确认的加深几何。更新需求与brief后，两次handoff导出（auto及force）均返回review_target_changed，仍引用旧review-58-15889ada-b5c1-4e39-9b93-8105dadc2d36；停止重复。当前导出记录绑定的是更新总高前的文档，尚未完成新需求的检查绑定，不得宣称整个项目已通过。原STEP未丢失、未改动。
+## 限制与失败处理
+旋钮首版圆边fillet0.8失败，mast已提交59；仅修复旋钮端面为0.4倒角，成功提交。未重复此前耗尽的完整螺纹旋合方法。
+外螺杆采用库定义的ISO小径简化表示，仅末端保留5 mm名义平端包络。没有完整外螺纹螺旋牙形；实物必须另有M5x0.8外螺纹，不能照着细光杆直接打印来锁紧。本STEP为位置/外观配合样机，不是完整螺纹加工文件。底座真实补偿内螺纹未改。名义装配不再悬空，但真实螺纹配合、锁紧力、凹点磨损、稳定性、食品接触仍需实测。

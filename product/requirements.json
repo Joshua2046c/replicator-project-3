@@ -88,7 +88,7 @@
       "source": "default"
     },
     "lock_hardware": {
-      "value": "ISO4762 M5x12 full thread, direct M5x0.8 internal thread",
+      "value": "custom six-lobe hand screw; M5x0.8 nominal thread,12 mm underhead length; simplified core CAD",
       "source": "default"
     },
     "delivery": {
@@ -112,7 +112,7 @@
       "source": "default"
     },
     "height_detents": {
-      "value": false,
+      "value": true,
       "source": "user"
     },
     "bowl_bottom_reinforcement": {
@@ -156,8 +156,40 @@
       "source": "default"
     },
     "bowl_deepen_scope": {
-      "value": "参考黄色碗侧视图加深顶部碗，其余零件、位置及底部连接不动",
+      "value": "保留32 mm深碗、斜凹槽与底座造型；升降柱增加5个浅凹点，螺丝改手拧头",
       "source": "user"
+    },
+    "height_detent_count": {
+      "value": 5,
+      "source": "user"
+    },
+    "height_detent_endpoints": {
+      "value": "第一档最低、第五档最高，覆盖原40 mm行程",
+      "source": "user"
+    },
+    "hand_knob": {
+      "value": "适合手拧的螺栓帽",
+      "source": "user"
+    },
+    "detent_pitch_mm": {
+      "value": 10,
+      "source": "default"
+    },
+    "detent_depth_mm": {
+      "value": 1.2,
+      "source": "default"
+    },
+    "detent_diameter_mm": {
+      "value": 5.8,
+      "source": "default"
+    },
+    "hand_knob_geometry": {
+      "value": {
+        "diameter_mm": 28,
+        "thickness_mm": 8,
+        "lobes": 6
+      },
+      "source": "default"
     }
   },
   "open_questions": []

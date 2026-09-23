@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 58,
-  "sourceHash": "786e91e5c6ba4140064646aeb68c05809efbc97408e5342658fb7dcfde782933",
+  "buildNumber": 67,
+  "sourceHash": "adc252275b6e6787ae697743da79408964ea606df0c431c4873ccfe76352c3c1",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -28,7 +28,7 @@
           "target": "mast",
           "order": 0,
           "path": "design/cat-bowl/source/parts/mast/000-mast.py",
-          "sha256": "7a595dcf5f6fb16c6a19cfcceda9b71b26506c12527669a3a6f1d634eae05991"
+          "sha256": "d194d24a8868212f65e7bfb0675d3ea8cbb5da24c3097d27b765b8bcd84b11ec"
         }
       ],
       "dependencies": []
@@ -56,7 +56,7 @@
           "target": "lock_hardware",
           "order": 0,
           "path": "design/cat-bowl/source/parts/lock_hardware/000-lock_hardware.py",
-          "sha256": "6be810bc8bd212eaf92e7d6cca543d961c42f936fdc097c0801684b5c47ebead"
+          "sha256": "9532ad9cd28a43f048f3f56354b75f1a5c456d345304f06618ff451e6035c1d5"
         }
       ],
       "dependencies": []
@@ -92,9 +92,9 @@
     {
       "id": "mast",
       "target": "mast",
-      "label": "斜承托台与圆升降柱",
+      "label": "五档浅凹圆升降柱",
       "kind": "generated",
-      "shapeHash": "2a3cdd4b6fdfa76393e71606397029d7143749501efa99f8a2c99dd7bb679041",
+      "shapeHash": "131a0bd1d89f64ad5689a4d4f497883757b2da776b41ac7d0c6cd991137ec067",
       "transform": {
         "positionMm": [
           0,
@@ -144,12 +144,12 @@
     {
       "id": "lock_screw",
       "target": "lock_hardware",
-      "label": "背面螺纹锁紧螺丝",
+      "label": "六瓣手拧螺丝（简化螺纹）",
       "kind": "generated",
-      "shapeHash": "a21fbe65a08b77082688070edc3b7a70bd60c63a7d0012e22cd454964b58c56f",
+      "shapeHash": "4cd339c61bdd3a05ce8561f7ffe483d76695af5c22e668887c8e225264fb3881",
       "transform": {
         "positionMm": [
-          -44,
+          -24.8,
           0,
           54
         ],
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T12:54:19.370Z",
+  "updatedAt": "2026-09-23T12:47:17.661Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -194,7 +194,13 @@
       "mast_edge_chamfer": 0.6,
       "mast_seat_angle_deg": 10,
       "mast_seat_center_rise": 9,
-      "mast_seat_diameter": 60
+      "mast_seat_diameter": 60,
+      "mast_detent_count": 5,
+      "mast_detent_pitch": 10,
+      "mast_detent_first_z": 10,
+      "mast_detent_diameter": 5.8,
+      "mast_detent_depth": 1.2,
+      "mast_detent_leadin": 0.35
     },
     "bowl": {
       "bowl_diameter": 140,
@@ -217,7 +223,12 @@
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,
-      "lock_screw_visible_thread_length": 12
+      "lock_screw_visible_thread_length": 12,
+      "lock_screw_knob_diameter": 28,
+      "lock_screw_knob_thickness": 8,
+      "lock_screw_knob_lobes": 6,
+      "lock_screw_knob_scallop_radius": 4,
+      "lock_screw_knob_edge_radius": 0.8
     }
   }
 }

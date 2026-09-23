@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "4d79b0b87e411b5dde52b3c80315f5cfd63992259584cb3557be7dec209a0b12",
+  "requirements_digest": "52c95270da0f05db063d35473492fae3a6daba5d71c532b5a02e4669dd696042",
   "items": [
     {
       "id": "base",
@@ -15,9 +15,9 @@
     },
     {
       "id": "mast",
-      "name": "光滑圆柱、10度斜承托面及顶部方榫",
+      "name": "5档浅凹点圆升降柱、斜承托台与方榫",
       "quantity": 1,
-      "part_number": "custom-mast-v3",
+      "part_number": "custom-mast-v4",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -33,11 +33,11 @@
     },
     {
       "id": "lock_screw",
-      "name": "M5x12全螺纹内六角锁紧螺丝",
+      "name": "28 mm六瓣手拧螺丝，M5x0.8×12名义螺杆",
       "quantity": 1,
-      "part_number": "ISO4762-M5-0.8x12",
+      "part_number": "custom-knob-M5x12-v1",
       "source": "default",
-      "procurement_status": "external_procurement_required",
+      "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     }
   ],
@@ -61,7 +61,7 @@
     {
       "id": "thread_mating",
       "severity": "advisory",
-      "description": "尺寸与标准明确，但旋合装配计算超时；本版以背面分解展示，不是完整装配验证"
+      "description": "本次杆体采用小径简化螺纹表示用于位置检查；外螺纹牙形不交付，不证明真实旋合；需M5螺纹实物试配"
     }
   ]
 }

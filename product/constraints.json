@@ -48,37 +48,53 @@
     "peg_height": 7,
     "overlap_at_max": 22,
     "diameter": 28,
-    "detents": false,
+    "detents": true,
     "grooves": false,
     "seat_center_above_body": 9,
     "seat_angle_deg": 10,
     "peg_exposed_at_center": 7,
     "seat_diameter": 60,
-    "peg_tip_above_body": 16
+    "peg_tip_above_body": 16,
+    "detent_count": 5,
+    "detent_pitch": 10,
+    "detent_depth": 1.2,
+    "detent_diameter": 5.8,
+    "detent_local_z": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "detent_side": "-X"
   },
   "lock": {
-    "standard": "ISO4762 M5-0.8x12 full thread",
+    "standard": "Custom 28 mm six-lobe knob; M5-0.8 nominal shank,12 mm underhead",
     "receiver": "direct internal M5x0.8 thread in base",
     "side": "rear -X",
     "center_z": 54,
-    "screw_underhead_x": -26,
-    "tip_x": -14,
+    "screw_underhead_x": -24.8,
+    "tip_x": -12.8,
     "kit_engagement_mm": 4.5,
     "print_material": "PETG",
     "kit_compensation_diametral_mm": 0.45,
     "nuts": 0,
     "external_blocks": 0,
-    "display_underhead_x": -44,
-    "intended_underhead_x": -26,
-    "display_state": "rear exploded, NOT locked",
+    "display_underhead_x": -24.8,
+    "intended_underhead_x": -24.8,
+    "display_state": "nominal assembled at middle detent; simplified external thread",
     "thread_mating_verified": false,
-    "thread_source": "bd_warehouse IsoThread M5x0.8; female negative diameter5.45"
+    "thread_source": "bd_warehouse IsoThread M5x0.8; female negative diameter5.45",
+    "knob_diameter": 28,
+    "knob_thickness": 8,
+    "thread_representation": "simplified minor diameter shank; no external helical faces; not thread verification",
+    "nominal_pocket_contact_verified": true
   },
   "connections": [
     {
       "id": "round_slide",
       "implementation": "free",
-      "reason": "round sliding fit without detents"
+      "reason": "round slide with five shallow rear pockets, 10 mm pitch across40 mm travel"
     },
     {
       "id": "bowl_detach",
@@ -88,7 +104,7 @@
     {
       "id": "height_lock",
       "implementation": "free_after_kit_rejection",
-      "reason": "Curved mouth overrun explicitly rejected by screwjoint; ISO library external negative used for compensated internal thread. Full engaged assembly computation repeatedly timed out."
+      "reason": "Retain prior compensated female thread after explicit kit rejection. Custom knob on library nominal M5x12 shaft, reduced to ISO minor diameter for CAD checks, nominal flat tip contacts dimple. No full helical mating verification."
     }
   ],
   "risks": [
@@ -100,12 +116,44 @@
     {
       "id": "travel",
       "resolved_for_cad": true,
-      "note": "no grooves or stops; user must keep at least22 mm insertion and hold bowl while loosening"
+      "note": "Five shallow points are not permanent pullout stops; hold bowl while loosening, retain22 mm insertion at highest point"
     },
     {
-      "id": "thread_assembly_runtime",
-      "resolved_for_cad": false,
-      "note": "Engaged screw placement repeatedly timed out at180s; rear exploded display exported, not assembled-thread verification"
+      "id": "thread_representation",
+      "resolved_for_cad": true,
+      "note": "Full external helix omitted in assembled fit-check STEP to avoid prior timeout; physical M5 thread engagement, torque and wear still untested"
+    }
+  ],
+  "height_stations": [
+    {
+      "station": 1,
+      "mast_bottom_z": 4,
+      "mast_pocket_local_z": 50,
+      "rim_max_z": 123.78730854217335
+    },
+    {
+      "station": 2,
+      "mast_bottom_z": 14,
+      "mast_pocket_local_z": 40,
+      "rim_max_z": 133.78730854217335
+    },
+    {
+      "station": 3,
+      "mast_bottom_z": 24,
+      "mast_pocket_local_z": 30,
+      "rim_max_z": 143.78730854217335
+    },
+    {
+      "station": 4,
+      "mast_bottom_z": 34,
+      "mast_pocket_local_z": 20,
+      "rim_max_z": 153.78730854217335
+    },
+    {
+      "station": 5,
+      "mast_bottom_z": 44,
+      "mast_pocket_local_z": 10,
+      "rim_max_z": 163.78730854217335
     }
   ]
 }
