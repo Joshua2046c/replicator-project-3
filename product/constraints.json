@@ -148,11 +148,6 @@
       "id": "thread_physical_fit",
       "resolved_for_cad": true,
       "note": "Inner/outer M6 helices modeled, no static interference. PETG0.45 diametral compensation uncalibrated; no physical torque/wear/fit testing."
-    },
-    {
-      "id": "height_requirement_conflict",
-      "resolved_for_cad": false,
-      "note": "Original user height range is unchanged; scaled-bowl range requires user decision."
     }
   ],
   "height_stations": [

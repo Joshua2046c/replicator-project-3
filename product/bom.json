@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "41c134565c0b2a9f0dc2aa1adcae1c82b357be7df5343edb825df367151b2322",
+  "requirements_digest": "ecc39d0f439b4ee71797f1ae26265319cd231dbd595355f85619a85d8e3ed883",
   "items": [
     {
       "id": "base",
@@ -62,11 +62,6 @@
       "id": "thread_mating",
       "severity": "advisory",
       "description": "本次建模M6x1内外螺旋牙形；PETG内螺纹补偿0.45 mm为默认试配值，真实锁紧及磨损需试验"
-    },
-    {
-      "id": "height_requirement_conflict",
-      "severity": "blocking",
-      "description": "Build87最高口沿范围125.9708–165.9708 mm，与source=user高度123.8–163.8 mm冲突；待用户选择更新高度、恢复原高度或记录例外。"
     }
   ]
 }

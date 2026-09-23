@@ -108,7 +108,7 @@
       {
         "role": "adjustable_cat_bowl",
         "design_id": "cat-bowl",
-        "description": "宽圆六瓣147 mm斜碗；高度要求冲突待用户决定",
+        "description": "宽圆六瓣147 mm斜碗，用户确认最高口沿范围约126.0–166.0 mm",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
