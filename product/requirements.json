@@ -43,10 +43,6 @@
       "value": 33.6,
       "source": "default"
     },
-    "bowl_bottom_diameter_mm": {
-      "value": 94.5,
-      "source": "default"
-    },
     "bowl_wall_mm": {
       "value": 3.15,
       "source": "default"
@@ -151,10 +147,6 @@
       "value": 6.825,
       "source": "default"
     },
-    "bowl_side_blend_radius_mm": {
-      "value": 12.6,
-      "source": "default"
-    },
     "bowl_deepen_scope": {
       "value": "碗身在32 mm深版本基础上放大5%；保留斜凹槽、底座与原五档机构",
       "source": "user"
@@ -203,19 +195,11 @@
       "source": "user"
     },
     "bowl_rim_shape": {
-      "value": "按20260923T145303689Z-1-mark.png标注将尖锐花瓣改圆润；保留侧面起伏",
+      "value": "严格按照本轮20260923T150648583Z-1-image.png修改碗的形状，不沿用上一版错误碗形",
       "source": "user"
     },
-    "bowl_rim_relief_mm": {
-      "value": 6.3,
-      "source": "default"
-    },
-    "bowl_rim_transition_height_mm": {
-      "value": 12.6,
-      "source": "default"
-    },
     "bowl_rim_interpretation": {
-      "value": "六瓣，平方余弦轮廓拓宽瓣顶；圆润参数2。放大后瓣顶本地Z33.6、瓣谷Z23.1，倾角10度。原尺寸参数保留为基准尺寸，由bowl_body_scale=1.05派生实际尺寸。",
+      "value": "以本轮照片为唯一碗形外观参考：连续圆弧碗壁和碗底、六个宽圆弧瓣顶、浅凹交界；不再采用锥壁加平方余弦深波浪。六瓣、球面曲率和4.2 mm瓣差为建模解释，照片不提供尺寸或隐藏面。保留147 mm外接圆、33.6 mm深度、10度倾角和原接口。",
       "source": "default"
     },
     "bowl_rim_petal_count": {
@@ -223,7 +207,7 @@
       "source": "default"
     },
     "bowl_rim_vertical_relief_mm": {
-      "value": 10.5,
+      "value": 4.2,
       "source": "default"
     },
     "bowl_enlargement_percent": {
@@ -232,6 +216,10 @@
     },
     "bowl_scale_scope": {
       "value": "以碗身局部原点将碗身三轴尺寸增加5%，底部凹槽、方孔与装配位置保持原尺寸；底座和升降机构不放大",
+      "source": "default"
+    },
+    "bowl_wall_definition": {
+      "value": "最高瓣顶平面的径向口沿宽3.15 mm；球面内外壁不等厚，中央底厚6.825 mm；不是恒定法向壁厚",
       "source": "default"
     }
   },

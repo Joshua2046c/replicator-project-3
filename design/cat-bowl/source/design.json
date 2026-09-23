@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 87,
-  "sourceHash": "864861a813a8221c837a6938f6ad4ed542f630876076f67d37db827b6c65827c",
+  "buildNumber": 88,
+  "sourceHash": "9147a51edf9d26789329a815febebafaea4685fbc50508db008e158b63c55b92",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -42,7 +42,7 @@
           "target": "bowl",
           "order": 0,
           "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
-          "sha256": "9f6f7155f2318d8785c605da137c1848344f8129d311791c1ce2c938c555f826"
+          "sha256": "372b46359dc917cb5d64df01a83ac8b6be3ffec3860fdd3ae7a8736c884080b6"
         }
       ],
       "dependencies": []
@@ -118,9 +118,9 @@
     {
       "id": "bowl",
       "target": "bowl",
-      "label": "宽圆六瓣加大碗",
+      "label": "圆弧浅瓣参考碗",
       "kind": "generated",
-      "shapeHash": "d0a297da3590c9cdbd87aa3b0c51808c5417222bf447abb3d3c3aca79960d142",
+      "shapeHash": "2a7c3219b15d4a09d1f6440e62ba59f8bbbcb3ffcb6d5535b3eb0eab1d5e8f4e",
       "transform": {
         "positionMm": [
           0,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T14:55:53.244Z",
+  "updatedAt": "2026-09-23T15:09:02.656Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -205,7 +205,6 @@
     },
     "bowl": {
       "bowl_diameter": 140,
-      "bowl_bottom_diameter": 90,
       "bowl_depth": 32,
       "bowl_wall": 3,
       "bowl_tilt_deg": 10,
@@ -213,7 +212,6 @@
       "bowl_socket_inner": 16.5,
       "bowl_socket_drop": 14,
       "bowl_socket_depth": 8,
-      "bowl_inner_fillet": 12,
       "bowl_socket_upper_diameter": 60,
       "bowl_seat_center_rise": 9,
       "bowl_recess_center_depth": 2,
@@ -222,12 +220,10 @@
       "bowl_floor_thickness": 6.5,
       "bowl_seat_diameter": 60,
       "bowl_rim_petals": 6,
-      "bowl_rim_radial_relief": 6,
-      "bowl_rim_transition_height": 12,
       "bowl_rim_phase_deg": 30,
-      "bowl_rim_vertical_relief": 10,
       "bowl_body_scale": 1.05,
-      "bowl_petal_roundness": 2
+      "bowl_photo_petal_sag": 4,
+      "bowl_photo_arc_span": 0.96
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,

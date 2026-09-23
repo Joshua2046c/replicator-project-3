@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "ecc39d0f439b4ee71797f1ae26265319cd231dbd595355f85619a85d8e3ed883",
+  "requirements_digest": "e5e2eb28929f84501be51a8ff15c4b2d1611f38838595ea6c4ded957b4f3107c",
   "items": [
     {
       "id": "base",
@@ -24,9 +24,9 @@
     },
     {
       "id": "bowl",
-      "name": "147 mm宽圆六瓣斜碗，33.6 mm深，原装配接口",
+      "name": "最新照片圆弧浅瓣碗，147 mm外接圆、33.6 mm深、原底部接口",
       "quantity": 1,
-      "part_number": "custom-bowl-v9-rounded-105",
+      "part_number": "custom-bowl-v10-photo-spherical",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
