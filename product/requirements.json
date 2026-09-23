@@ -203,7 +203,7 @@
       "source": "user"
     },
     "bowl_rim_shape": {
-      "value": "按20260923T143207016Z-1-image.png参考形状修改碗",
+      "value": "参考20260923T144337916Z-1-image.png，花瓣造型从侧面看也要明显",
       "source": "user"
     },
     "bowl_rim_relief_mm": {
@@ -215,11 +215,15 @@
       "source": "default"
     },
     "bowl_rim_interpretation": {
-      "value": "参考照片的宽圆花瓣和浅内收轮廓，默认六瓣、半径64至70 mm、相位30度；保留32 mm深度和10度倾角。照片无尺寸，不宣称精确复刻",
+      "value": "保留六瓣及10度倾角，在原宽圆碗壁上形成竖向起伏的口沿：瓣顶本地Z32、瓣谷Z22，平滑余弦过渡，后侧最高瓣顶不升高；原底部连接不变。照片仅指导造型，尺寸为默认值。",
       "source": "default"
     },
     "bowl_rim_petal_count": {
       "value": 6,
+      "source": "default"
+    },
+    "bowl_rim_vertical_relief_mm": {
+      "value": 10,
       "source": "default"
     }
   },

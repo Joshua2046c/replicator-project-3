@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "c9ffb2f8a6f8a9f208bfdaca38b50d28b3a07d6befe409d11e695db294795e84",
+  "requirements_digest": "f2132d056c6c260617e380b7516f16eedb379595cf6c64f7a209ab57a0d260b8",
   "items": [
     {
       "id": "base",
@@ -24,9 +24,9 @@
     },
     {
       "id": "bowl",
-      "name": "参考图宽圆六瓣斜碗，32 mm深，保留原底部连接",
+      "name": "六瓣竖向起伏花口斜碗，瓣顶深32 mm、瓣谷低10 mm",
       "quantity": 1,
-      "part_number": "custom-bowl-v7-reference-rounded",
+      "part_number": "custom-bowl-v8-scalloped-height",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []

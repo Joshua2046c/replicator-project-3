@@ -27,17 +27,22 @@
     "side_blend_radius": 12,
     "nominal_cavity_depth": 25.5,
     "rim_height_range_at_existing_travel": [
-      123.7873085,
-      163.7873085
+      123.7873086422,
+      163.7873086422
     ],
-    "rim_shape": "reference-inspired broad rounded six-lobe rim",
+    "rim_shape": "six-lobe rim with cosine vertical scallops",
     "rim_petal_count": 6,
     "rim_crest_radius": 70,
-    "rim_valley_radius": 64,
+    "rim_valley_radius": 61.7430555556,
     "rim_radial_relief": 6,
     "rim_transition_height": 12,
     "rim_transition_start_z_local": 20,
-    "rim_phase_deg": 30
+    "rim_phase_deg": 30,
+    "rim_vertical_relief": 10,
+    "rim_crest_z_local": 32,
+    "rim_valley_z_local": 22,
+    "rim_radial_relief_note": "6 mm is the untrimmed wall modulation parameter; after vertical scalloping, valley radius at local Z22 is 61.7431 mm.",
+    "nominal_cavity_depth_note": "25.5 mm at crest, 15.5 mm at valley in bowl-local Z, not liquid fill depth when tilted."
   },
   "base": {
     "diameter": 160,
@@ -148,31 +153,31 @@
       "station": 1,
       "mast_bottom_z": 4,
       "mast_pocket_local_z": 50,
-      "rim_max_z": 123.78730854217335
+      "rim_max_z": 123.7873086422
     },
     {
       "station": 2,
       "mast_bottom_z": 14,
       "mast_pocket_local_z": 40,
-      "rim_max_z": 133.78730854217335
+      "rim_max_z": 133.7873086422
     },
     {
       "station": 3,
       "mast_bottom_z": 24,
       "mast_pocket_local_z": 30,
-      "rim_max_z": 143.78730854217335
+      "rim_max_z": 143.7873086422
     },
     {
       "station": 4,
       "mast_bottom_z": 34,
       "mast_pocket_local_z": 20,
-      "rim_max_z": 153.78730854217335
+      "rim_max_z": 153.7873086422
     },
     {
       "station": 5,
       "mast_bottom_z": 44,
       "mast_pocket_local_z": 10,
-      "rim_max_z": 163.78730854217335
+      "rim_max_z": 163.7873086422
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 85,
-  "sourceHash": "1cb1fa0a8cee918e35bd7d5adbfee535a1ef53979fd2be798d9e9a3d19977b48",
+  "buildNumber": 86,
+  "sourceHash": "d7f06025bce1d83209cdaa1545d1d8b2776b8515dfb58b9067639641d67fb665",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -42,7 +42,7 @@
           "target": "bowl",
           "order": 0,
           "path": "design/cat-bowl/source/parts/bowl/000-bowl.py",
-          "sha256": "708cf396837c7ecee8d8c641bb5c7c3dd7cbf71296ed9972102cddc1de86d12b"
+          "sha256": "f858228765c3598720d87564706b9ef81e8e1a23d359af6a193814de3a40a40e"
         }
       ],
       "dependencies": []
@@ -118,9 +118,9 @@
     {
       "id": "bowl",
       "target": "bowl",
-      "label": "轻起伏五瓣花口碗",
+      "label": "立体六瓣花口碗",
       "kind": "generated",
-      "shapeHash": "8be427340894742601fcc95ed0f8e4f577f560556fb15e4ef88ddc88d88b8fa0",
+      "shapeHash": "09a70e7111bf0b73aa6a6869d9161558bc9174686e4c1c5bde3b29d0d4536bd8",
       "transform": {
         "positionMm": [
           0,
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T14:36:35.731Z",
+  "updatedAt": "2026-09-23T14:47:27.490Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -224,7 +224,8 @@
       "bowl_rim_petals": 6,
       "bowl_rim_radial_relief": 6,
       "bowl_rim_transition_height": 12,
-      "bowl_rim_phase_deg": 30
+      "bowl_rim_phase_deg": 30,
+      "bowl_rim_vertical_relief": 10
     },
     "lock_hardware": {
       "lock_screw_thread_phase_deg": 0,

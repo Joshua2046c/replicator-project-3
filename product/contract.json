@@ -80,6 +80,12 @@
       "source": "user_requested",
       "description": "当前碗形参考照片，取代前面的花瓣次数试验及临时恢复圆碗方向",
       "path": "product/references/uploads/20260923T143207016Z-1-image.png"
+    },
+    {
+      "id": "side_flower_reference",
+      "source": "user_requested",
+      "description": "侧面清晰可见的高低起伏花瓣口沿；当前造型重点，不复制金属底脚",
+      "path": "product/references/uploads/20260923T144337916Z-1-image.png"
     }
   ],
   "assembly_story": {
@@ -96,7 +102,7 @@
       {
         "role": "adjustable_cat_bowl",
         "design_id": "cat-bowl",
-        "description": "参考照片轮廓的宽圆花口斜碗及原升降底座",
+        "description": "侧面可见高低起伏花瓣口沿的斜碗及原升降机构",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
@@ -115,7 +121,8 @@
           "five_detents_knob_markup",
           "thicker_thread_markup",
           "flower_knob_markup",
-          "rounded_bowl_photo"
+          "rounded_bowl_photo",
+          "side_flower_reference"
         ]
       }
     ]
