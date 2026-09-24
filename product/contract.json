@@ -93,6 +93,12 @@
       "source": "user_requested",
       "description": "方杆与帽分体插接，五瓣帽改圆形瓢虫",
       "path": "product/references/uploads/20260924T091425414Z-1-mark.png"
+    },
+    {
+      "id": "seven_spot_markup",
+      "source": "user_requested",
+      "description": "七个斑点整体下移，中间两侧向外挪动贴合轮廓",
+      "path": "product/references/uploads/20260924T093415244Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -131,7 +137,8 @@
           "thicker_thread_markup",
           "rounder_larger_bowl_markup",
           "strict_bowl_photo",
-          "ladybug_split_markup"
+          "ladybug_split_markup",
+          "seven_spot_markup"
         ]
       }
     ]

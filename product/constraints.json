@@ -208,7 +208,7 @@
     "side_clearance": 0.1,
     "engraving_depth": 0.8,
     "seam_width": 0.7,
-    "spot_count": 6,
+    "spot_count": 7,
     "spot_radius": 1.7,
     "spot_offset_x": 7,
     "spot_row_pitch": 5.5,
@@ -228,6 +228,40 @@
       0
     ],
     "axial_retainer": false,
-    "style": "round spherical dome; engraved head, eyes, wing seam and six spots; one solid"
+    "style": "round spherical dome; engraved head, eyes, interrupted wing seam and seven spots; one solid",
+    "spot_downshift": 1.2,
+    "middle_spot_outshift": 1.3,
+    "center_spot_y_before_downshift": -1,
+    "center_spot_seam_gap": 0.45,
+    "spot_centers_local_xy": [
+      [
+        -7,
+        4.3
+      ],
+      [
+        7,
+        4.3
+      ],
+      [
+        -8.3,
+        -1.2
+      ],
+      [
+        8.3,
+        -1.2
+      ],
+      [
+        -7,
+        -6.7
+      ],
+      [
+        7,
+        -6.7
+      ],
+      [
+        0,
+        -2.2
+      ]
+    ]
   }
 }
