@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 93,
-  "sourceHash": "d60aa1e01f1dea8f205e0c43c76815968febe4d41c4d1744f36764c2eded545f",
+  "buildNumber": 97,
+  "sourceHash": "6f921aa1fb7a44a62f6ce32d2d1a349b18fe9b10b4448984d5efa300453133d5",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -56,7 +56,21 @@
           "target": "lock_hardware",
           "order": 0,
           "path": "design/cat-bowl/source/parts/lock_hardware/000-lock_hardware.py",
-          "sha256": "e3e0698dd18df9f54345fc5488d9482e484257af4228e1a006b37c55345528fd"
+          "sha256": "d8a07ce1d59b60790d3b6e7337cf80065651689018e9353a3626a61f3d4eb415"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "ladybug_cap",
+      "label": "ladybug_cap",
+      "cells": [
+        {
+          "id": "ladybug_cap",
+          "target": "ladybug_cap",
+          "order": 0,
+          "path": "design/cat-bowl/source/parts/ladybug_cap/000-ladybug_cap.py",
+          "sha256": "802517f8a99be7d641660c824b77b530750651bef2c7e145e09dfb423a839053"
         }
       ],
       "dependencies": []
@@ -144,9 +158,9 @@
     {
       "id": "lock_screw",
       "target": "lock_hardware",
-      "label": "五瓣手柄方插销",
+      "label": "独立双端方销",
       "kind": "generated",
-      "shapeHash": "ae009c762d3e331a0f62d488f9575a01ecd145a1a54fcefaa6be865c705b28a8",
+      "shapeHash": "c28f99451b949b07753008bd7c3a91ad7413678eb5dc83ac190d8ef6e911c021",
       "transform": {
         "positionMm": [
           -20,
@@ -166,11 +180,37 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "ladybug_cap",
+      "target": "ladybug_cap",
+      "label": "圆形瓢虫插接帽",
+      "kind": "generated",
+      "shapeHash": "bec6deb11d709f21b121020793f426722fb081570c070a2ae990cbde5bebe0c5",
+      "transform": {
+        "positionMm": [
+          -20,
+          0,
+          54
+        ],
+        "rotationDeg": [
+          90,
+          -90,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-24T08:39:57.431Z",
+  "updatedAt": "2026-09-24T09:18:18.410Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -223,14 +263,31 @@
       "bowl_photo_arc_span": 0.96
     },
     "lock_hardware": {
-      "lock_screw_knob_diameter": 28,
-      "lock_screw_knob_thickness": 8,
-      "lock_screw_knob_lobes": 5,
-      "lock_screw_knob_scallop_radius": 6,
-      "lock_screw_knob_edge_radius": 3,
       "lock_screw_square_width": 6,
       "lock_screw_square_length": 14,
-      "lock_screw_square_tip_chamfer": 0.5
+      "lock_screw_square_tip_chamfer": 0.5,
+      "lock_screw_shoulder_width": 9,
+      "lock_screw_shoulder_thickness": 1.2,
+      "lock_screw_cap_tongue_length": 4
+    },
+    "ladybug_cap": {
+      "ladybug_cap_diameter": 28,
+      "ladybug_cap_edge_thickness": 4,
+      "ladybug_cap_dome_rise": 6,
+      "ladybug_cap_socket_width": 6.2,
+      "ladybug_cap_socket_depth": 5.5,
+      "ladybug_cap_shoulder_recess_width": 9.2,
+      "ladybug_cap_shoulder_recess_depth": 1.2,
+      "ladybug_cap_engraving_depth": 0.8,
+      "ladybug_cap_seam_width": 0.7,
+      "ladybug_cap_head_center_y": 10,
+      "ladybug_cap_head_radius": 6,
+      "ladybug_cap_spot_radius": 1.7,
+      "ladybug_cap_spot_offset_x": 7,
+      "ladybug_cap_spot_row_pitch": 5.5,
+      "ladybug_cap_eye_radius": 0.8,
+      "ladybug_cap_eye_spacing": 4.4,
+      "ladybug_cap_eye_y": 11.3
     }
   }
 }

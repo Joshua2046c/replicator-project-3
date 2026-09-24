@@ -84,7 +84,7 @@
     "detent_type": "square blind pocket"
   },
   "lock": {
-    "type": "custom threadless square pin",
+    "type": "custom separate threadless square pin",
     "side": "rear -X",
     "center_z": 54,
     "underhead_x": -20,
@@ -100,17 +100,16 @@
     "clearance_per_side": 0.2,
     "nominal_centerline_mast_insertion": 8,
     "minimum_full_section_insertion_approx": 7.175,
-    "knob_diameter": 28,
-    "knob_thickness": 8,
-    "knob_lobes": 5,
-    "knob_scallop_radius": 6,
-    "knob_edge_radius": 3,
-    "knob_end_chamfer": 1.5,
     "threaded": false,
     "axial_retainer": false,
     "display_state": "middle station, centered clearance rather than loaded contact",
     "nuts": 0,
-    "external_blocks": 0
+    "external_blocks": 0,
+    "shoulder_width": 9,
+    "shoulder_thickness": 1.2,
+    "cap_tongue_width": 6,
+    "cap_tongue_length": 4,
+    "total_pin_length": 19.2
   },
   "connections": [
     {
@@ -127,6 +126,11 @@
       "id": "height_lock",
       "implementation": "free_square_pin",
       "reason": "Custom straight6 mm square pin in6.4 mm base and mast holes;14 mm shaft; no screw, thread, spring or axial retainer."
+    },
+    {
+      "id": "pin_cap",
+      "implementation": "free",
+      "reason": "Custom square clearance insertion; tongue6, socket6.2, engagement4;9 mm shoulder in9.2 mm recess acts as insertion stop; no axial retention."
     }
   ],
   "risks": [
@@ -149,6 +153,11 @@
       "id": "square_fit",
       "resolved_for_cad": true,
       "note": "0.2 mm per-side clearance default, not calibrated; horizontal square hole roofs need printing review."
+    },
+    {
+      "id": "cap_retention",
+      "resolved_for_cad": true,
+      "note": "0.1 mm per side is an uncalibrated trial clearance; cap can pull off alone. Support bowl and grip exposed tongue/shoulder to remove pin. Loose parts must be kept away from pets. No unattended-use claim."
     }
   ],
   "height_stations": [
@@ -182,5 +191,43 @@
       "mast_pocket_local_z": 10,
       "rim_max_z": 167.940385174852
     }
-  ]
+  ],
+  "ladybug_cap": {
+    "source": "default",
+    "diameter": 28,
+    "edge_thickness": 4,
+    "dome_rise": 6,
+    "nominal_max_thickness": 10,
+    "socket_width": 6.2,
+    "socket_depth_from_rear": 5.5,
+    "shoulder_recess_width": 9.2,
+    "shoulder_recess_depth": 1.2,
+    "tongue_engagement": 4,
+    "full_square_engagement": 3.5,
+    "tip_clearance": 0.3,
+    "side_clearance": 0.1,
+    "engraving_depth": 0.8,
+    "seam_width": 0.7,
+    "spot_count": 6,
+    "spot_radius": 1.7,
+    "spot_offset_x": 7,
+    "spot_row_pitch": 5.5,
+    "head_center_y": 10,
+    "head_radius": 6,
+    "eye_radius": 0.8,
+    "eye_spacing": 4.4,
+    "eye_y": 11.3,
+    "position_mm": [
+      -20,
+      0,
+      54
+    ],
+    "rotation_deg": [
+      90,
+      -90,
+      0
+    ],
+    "axial_retainer": false,
+    "style": "round spherical dome; engraved head, eyes, wing seam and six spots; one solid"
+  }
 }

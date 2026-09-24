@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "264dd53aa3b52a089b36bd2c841aee719c07b448ed593f745a4e7808b115862b",
+  "requirements_digest": "a305e911d97ae16b6c5d7128569ca9e66bdff5e1738132b1c105ec562077ce5e",
   "items": [
     {
       "id": "base",
@@ -33,9 +33,18 @@
     },
     {
       "id": "lock_screw",
-      "name": "五瓣手柄方插销，6 mm方杆长14 mm，无螺纹",
+      "name": "独立方销，6 mm杆、14 mm外露、方肩与4 mm帽榫",
       "quantity": 1,
-      "part_number": "custom-square-pin-v1-flower5",
+      "part_number": "custom-square-pin-v2-separate",
+      "source": "default",
+      "procurement_status": "custom_fabrication",
+      "required_user_evidence": []
+    },
+    {
+      "id": "ladybug_cap",
+      "name": "28 mm圆鼓瓢虫帽，背面6.2 mm插孔",
+      "quantity": 1,
+      "part_number": "custom-ladybug-cap-v1",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -57,6 +66,11 @@
       "id": "food_contact",
       "severity": "advisory",
       "description": "食品接触未验证。"
+    },
+    {
+      "id": "cap_retention",
+      "severity": "advisory",
+      "description": "帽与方销为间隙插接，无拉脱锁止，需试配；拔帽不保证带出销。分离小件避免宠物接触。"
     }
   ]
 }

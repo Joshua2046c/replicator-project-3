@@ -84,7 +84,7 @@
       "source": "default"
     },
     "lock_hardware": {
-      "value": "custom 6 mm square sliding pin,14 mm underhead length, retained five-petal handle;6.4 mm square base opening and five mast blind pockets8.5 mm deep",
+      "value": "two-piece threadless square pin and ladybug cap;6 mm square exposed shaft14 mm,9 mm shoulder1.2 mm thick,6 mm square cap tongue4 mm; cap6.2 mm square socket5.5 mm deep and9.2 mm shoulder recess1.2 mm deep",
       "source": "default"
     },
     "delivery": {
@@ -160,7 +160,7 @@
       "source": "user"
     },
     "hand_knob": {
-      "value": "五瓣花朵外形手柄，随取消螺纹改为插拔使用",
+      "value": "原五瓣帽改为圆形瓢虫造型",
       "source": "user"
     },
     "detent_pitch_mm": {
@@ -174,20 +174,14 @@
     "hand_knob_geometry": {
       "value": {
         "diameter_mm": 28,
-        "thickness_mm": 8,
-        "lobes": 5,
-        "scallop_radius_mm": 6,
-        "edge_radius_mm": 3,
-        "end_chamfer_mm": 1.5
+        "edge_thickness_mm": 4,
+        "dome_rise_mm": 6,
+        "decoration_depth_mm": 0.8
       },
       "source": "default"
     },
     "lock_shank_revision": {
       "value": "插销为对应正方形，无螺纹",
-      "source": "user"
-    },
-    "hand_knob_petal_count": {
-      "value": 5,
       "source": "user"
     },
     "bowl_rim_shape": {
@@ -224,6 +218,14 @@
     },
     "square_lock_scope": {
       "value": "正方形指背面孔与插销杆；保留圆底盘与圆升降柱。方孔为盲孔，五档位置不变。直插销无自动防脱，当前为试配模型。",
+      "source": "default"
+    },
+    "pin_cap_connection": {
+      "value": "方桩与帽拆成独立零件，采用插入结构",
+      "source": "user"
+    },
+    "cap_fit_note": {
+      "value": "帽与方销每侧0.1 mm间隙；插入不等于防拔锁止，帽可能单独拔下，拉帽不保证拔出方销，需抓住方销肩部。先试配，未验证保持力。",
       "source": "default"
     }
   },

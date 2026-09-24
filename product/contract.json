@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "最新照片圆弧浅瓣升降猫碗",
+  "summary": "分体方销与圆形瓢虫插接帽的升降猫碗",
   "required_interfaces": [
     {
       "id": "round_slide",
@@ -21,7 +21,14 @@
     {
       "id": "height_lock",
       "kind": "mechanical",
-      "description": "无螺纹方插销：6 mm方杆长14 mm；底座6.4 mm侧方孔、升降柱6.4 mm方盲孔深8.5 mm；保留五瓣手柄。无轴向防脱，只用于试配。",
+      "description": "无螺纹方插销：6 mm方杆长14 mm；底座6.4 mm侧方孔、升降柱6.4 mm方盲孔深8.5 mm；独立方销配圆形瓢虫插接帽。无轴向防脱，只用于试配。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "pin_cap",
+      "kind": "internal_fit",
+      "description": "独立方销与帽背面方孔直插；6 mm榫、6.2 mm孔、插入4 mm；方肩止挡。无螺纹或轴向锁扣。",
       "source": "user_requested",
       "required": true
     }
@@ -70,12 +77,6 @@
       "path": "product/references/uploads/20260923T125407893Z-1-mark.png"
     },
     {
-      "id": "flower_knob_markup",
-      "source": "user_requested",
-      "description": "手拧头改为五瓣花朵外形",
-      "path": "product/references/uploads/20260923T133714468Z-1-mark.png"
-    },
-    {
       "id": "rounder_larger_bowl_markup",
       "source": "user_requested",
       "description": "保留用户要求的5%放大；该图中的旧碗轮廓不作为当前外观目标",
@@ -86,13 +87,20 @@
       "source": "user_requested",
       "description": "本轮唯一碗身形状参考；圆弧碗壁、宽圆瓣顶、浅瓣间凹口",
       "path": "product/references/uploads/20260923T150648583Z-1-image.png"
+    },
+    {
+      "id": "ladybug_split_markup",
+      "source": "user_requested",
+      "description": "方杆与帽分体插接，五瓣帽改圆形瓢虫",
+      "path": "product/references/uploads/20260924T091425414Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "托住碗，对准五档方孔之一，直插方销至手柄止挡；不旋拧",
-    "maintenance": "托碗后向后拔出方销，换档或拆开清洁；插销无防脱，避免碰出",
+    "installation": "先将方销插入底座及柱方孔至方肩止挡，再将瓢虫帽背面的方孔套入方销外端。",
+    "maintenance": "托碗后取下帽并抓住方销肩部拔销；帽与销没有拉脱锁止，避免小件遗失。",
     "user_access": [
-      "五瓣手柄方销",
+      "圆形瓢虫插接帽",
+      "独立方销",
       "可拆斜碗"
     ]
   },
@@ -102,7 +110,7 @@
       {
         "role": "adjustable_cat_bowl",
         "design_id": "cat-bowl",
-        "description": "按最新照片重建连续圆弧浅瓣147 mm碗身，保留原装配及128–168 mm最高口沿范围",
+        "description": "独立方销与圆形瓢虫帽，帽背面方孔直插；保留147 mm圆弧浅瓣碗和128–168 mm最高口沿范围",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
@@ -110,7 +118,8 @@
         "interface_ids": [
           "round_slide",
           "bowl_detach",
-          "height_lock"
+          "height_lock",
+          "pin_cap"
         ],
         "reference_ids": [
           "reference_image_1",
@@ -120,9 +129,9 @@
           "deeper_bowl_side_reference",
           "five_detents_knob_markup",
           "thicker_thread_markup",
-          "flower_knob_markup",
           "rounder_larger_bowl_markup",
-          "strict_bowl_photo"
+          "strict_bowl_photo",
+          "ladybug_split_markup"
         ]
       }
     ]
