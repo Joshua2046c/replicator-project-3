@@ -15,7 +15,7 @@ spot_pitch=param('ladybug_cap_spot_row_pitch',5.5)
 spot_down=param('ladybug_cap_spot_downshift',1.2)
 mid_out=param('ladybug_cap_middle_spot_outshift',1.3)
 center_y=param('ladybug_cap_center_spot_y',-1.0)
-seam_gap=param('ladybug_cap_center_spot_seam_gap',0.45)
+seam_gap=param('ladybug_cap_center_spot_seam_gap',0.0)
 eye_r=param('ladybug_cap_eye_radius',0.8)
 eye_spacing=param('ladybug_cap_eye_spacing',4.4)
 eye_y=param('ladybug_cap_eye_y',11.3)
@@ -29,8 +29,10 @@ skin=outer-(Pos(0,0,-engrave)*outer)
 cut_h=edge_t+rise+2
 ring=Pos(0,head_y,0)*(Cylinder(head_r+seam/2,cut_h,align=(Align.CENTER,Align.CENTER,Align.MIN))-Cylinder(head_r-seam/2,cut_h,align=(Align.CENTER,Align.CENTER,Align.MIN)))
 wing_seam=Pos(0,(-r+head_y-head_r)/2,0)*Box(seam,r+head_y-head_r,cut_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
-# Interrupt seam locally so the seventh spot reads as a complete circle.
-wing_seam-=Pos(0,center_y-spot_down,0)*Cylinder(spot_r+seam_gap,cut_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
+# Zero gap means a continuous groove, joined to the central spot.
+# Keep the existing parameter name for compatibility with earlier builds.
+if seam_gap>0:
+ wing_seam-=Pos(0,center_y-spot_down,0)*Cylinder(spot_r+seam_gap,cut_h,align=(Align.CENTER,Align.CENTER,Align.MIN))
 marks=ring+wing_seam
 for sign in [-1,1]:
  for row in [-1,0,1]:

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "e01b89c789229a30359fd9c9615e1d8e4b968344224512d717f64f44ac67d0d4",
+  "requirements_digest": "d957d486537705a4adef8b6eeac0de3522292c444aaa55b846210e2dd06ebef9",
   "items": [
     {
       "id": "base",
@@ -42,9 +42,9 @@
     },
     {
       "id": "ladybug_cap",
-      "name": "28 mm七斑点圆鼓瓢虫帽，背面6.2 mm插孔",
+      "name": "28 mm七斑点瓢虫帽，中央连续凹槽，背面6.2 mm插孔",
       "quantity": 1,
-      "part_number": "custom-ladybug-cap-v2-seven-spots",
+      "part_number": "custom-ladybug-cap-v3-continuous-groove",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []

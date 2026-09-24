@@ -99,6 +99,12 @@
       "source": "user_requested",
       "description": "七个斑点整体下移，中间两侧向外挪动贴合轮廓",
       "path": "product/references/uploads/20260924T093415244Z-1-mark.png"
+    },
+    {
+      "id": "continuous_groove_markup",
+      "source": "user_requested",
+      "description": "中央凹槽经过中央斑点连续连通",
+      "path": "product/references/uploads/20260924T100434126Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -138,7 +144,8 @@
           "rounder_larger_bowl_markup",
           "strict_bowl_photo",
           "ladybug_split_markup",
-          "seven_spot_markup"
+          "seven_spot_markup",
+          "continuous_groove_markup"
         ]
       }
     ]

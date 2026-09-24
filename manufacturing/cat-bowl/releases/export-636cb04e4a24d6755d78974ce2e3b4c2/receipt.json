@@ -1,0 +1,193 @@
+{
+  "designId": "cat-bowl",
+  "buildNumber": 100,
+  "sourceHash": "78a05a04f4ee837cde4d8809d4df81f8535578d320204807d3ccc96e9303af23",
+  "schemaVersion": 2,
+  "exportId": "export-636cb04e4a24d6755d78974ce2e3b4c2",
+  "generatedAt": "2026-09-24T10:06:01.838Z",
+  "designSha256": "bca11832dffc0b46f58f2ffbe37dbe6579d71dadca373588872baa4e13f55f01",
+  "role": "adjustable_cat_bowl",
+  "stateHash": "43cd018bd626bc5d8ee76e88aa688fd17ae50863eb36bc6c2e4feb17aee105aa",
+  "stateManifest": {
+    "schemaVersion": 2,
+    "designId": "cat-bowl",
+    "role": "adjustable_cat_bowl",
+    "design": {
+      "buildNumber": 100,
+      "sourceHash": "78a05a04f4ee837cde4d8809d4df81f8535578d320204807d3ccc96e9303af23",
+      "designSha256": "cf15d40df1c722e623f116d2e306e59cbd6bbbbad2fad4d601635bc150fd951d",
+      "manifestSha256": "dcc2b47681cd1949ba9020aae2543cf2ba1ba3737767d7d89afc48458d641e88",
+      "stepSha256": "29607aee209c5d93026be7d73e2d1e0a365714017afe540479200ca8ddffadad",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/cat-bowl/README.md",
+      "sha256": "d0fe7c58873b2d3e6111cd8c220d7acb68823eb07812d0a1fe2f4e2d36893d94"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "b491f7513d9147dd2631cdb7ba80f555d88d9df7474942f2e9241cb9c651fee2",
+      "designRequirementSha256": "38502d8c177def3566068620d482f715708ab2f608333f249b95f9c8d14bc281",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "continuous_groove_markup",
+          "path": "product/references/uploads/20260924T100434126Z-1-mark.png",
+          "sha256": "e9fc264eebf27ee901a7c410920fe6a3f0497bf92fae213140bf4bb89858053d",
+          "sizeBytes": 209952
+        },
+        {
+          "role": "external-reference",
+          "id": "deeper_bowl_side_reference",
+          "path": "product/references/uploads/20260922T125215893Z-1-image.png",
+          "sha256": "204caddb0b5f2cd51cb6eefa55aff62958b72c097d3f89a8db1d243a3577a70d",
+          "sizeBytes": 53282
+        },
+        {
+          "role": "external-reference",
+          "id": "five_detents_knob_markup",
+          "path": "product/references/uploads/20260923T123743808Z-1-mark.png",
+          "sha256": "f449b1cbbac4385fb185454bf545dd323dd68b98f87b9fbfa3afc41a54622540",
+          "sizeBytes": 225166
+        },
+        {
+          "role": "external-reference",
+          "id": "inclined_seat_markup",
+          "path": "product/references/uploads/20260922T123245362Z-1-mark.png",
+          "sha256": "bf7b0015d76eff06cd655e22513a46337491bf0ae6afe88f7203ed19974ba405",
+          "sizeBytes": 165253
+        },
+        {
+          "role": "external-reference",
+          "id": "ladybug_split_markup",
+          "path": "product/references/uploads/20260924T091425414Z-1-mark.png",
+          "sha256": "2aba78ccdb12588120ff15faca5806f37a77da0ab35527ce24bcb2ff551c6636",
+          "sizeBytes": 152518
+        },
+        {
+          "role": "external-reference",
+          "id": "reference_image_1",
+          "path": "product/references/uploads/20260922T112814810Z-1-image.png",
+          "sha256": "d3de9a161fd283d513c3a1ecadfc42bfec7d65c3641a714fa623cb41e3945882",
+          "sizeBytes": 302161
+        },
+        {
+          "role": "external-reference",
+          "id": "reference_image_2",
+          "path": "product/references/uploads/20260922T112814810Z-2-image.png",
+          "sha256": "1f1ea04c8ea7b0d9f60b0d940d9f20e0e30208a39dbafdd2ae3bd486c8c92597",
+          "sizeBytes": 364147
+        },
+        {
+          "role": "external-reference",
+          "id": "round_mast_markup",
+          "path": "product/references/uploads/20260922T115012765Z-1-mark.png",
+          "sha256": "33ad57f7103030c63259064dd9015dc7a8970e9367c8fb8d293eef27ad8c56e6",
+          "sizeBytes": 201700
+        },
+        {
+          "role": "external-reference",
+          "id": "rounder_larger_bowl_markup",
+          "path": "product/references/uploads/20260923T145303689Z-1-mark.png",
+          "sha256": "d3d9407ca9232c1aaaebd22ae88ac6610be6b0ce6304ecf4f113ad3150f85e2f",
+          "sizeBytes": 356668
+        },
+        {
+          "role": "external-reference",
+          "id": "seven_spot_markup",
+          "path": "product/references/uploads/20260924T093415244Z-1-mark.png",
+          "sha256": "dd04fd7077e56b30ed2d152852945bdad42a9bacdc257f0cd5e924cda181ce45",
+          "sizeBytes": 156702
+        },
+        {
+          "role": "external-reference",
+          "id": "strict_bowl_photo",
+          "path": "product/references/uploads/20260923T150648583Z-1-image.png",
+          "sha256": "76d85509cf8f6ca8bef81b9877decfc46071bdc973f148f5068f318da3384149",
+          "sizeBytes": 823408
+        },
+        {
+          "role": "external-reference",
+          "id": "thicker_thread_markup",
+          "path": "product/references/uploads/20260923T125407893Z-1-mark.png",
+          "sha256": "c90e0bdbb8686c3464c2a37f6847e94e3dc619bae93fe370cc67e02a5bf27a0c",
+          "sizeBytes": 262995
+        }
+      ]
+    },
+    "delivery": {
+      "target": "fit_check",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "43cd018bd626bc5d8ee76e88aa688fd17ae50863eb36bc6c2e4feb17aee105aa"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "dcc2b47681cd1949ba9020aae2543cf2ba1ba3737767d7d89afc48458d641e88",
+    "stepSha256": "29607aee209c5d93026be7d73e2d1e0a365714017afe540479200ca8ddffadad"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "2bf557334c52ec5d092ce927635d10591a87b85e6c441c3f4aa3411ff2379a39"
+  },
+  "sourceHashes": {
+    "base/base": "1156e3be250e78c8b10f75087680ed6ba6e9f299d018aa133a7448534161a1c4",
+    "bowl/bowl": "372b46359dc917cb5d64df01a83ac8b6be3ffec3860fdd3ae7a8736c884080b6",
+    "ladybug_cap/ladybug_cap": "691b72099ce028539ae6ded87a7c4249574249462e2e8c8f9a55387b599519bd",
+    "lock_hardware/lock_hardware": "d8a07ce1d59b60790d3b6e7337cf80065651689018e9353a3626a61f3d4eb415",
+    "mast/mast": "984d9bc11716ddbacaa47f57177abe89bae611e1df0d1f99695c62fc6611961d"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "base": "6189acf6aa8cec284ff58072b40c3054694c22c5185a18d97061c7d66cbb5768",
+    "bowl": "a5f4e3cdeee683c484b4c0018f185cb61037bc191940ed54eee417e4c65fa2ed",
+    "ladybug_cap": "71dc035b53e2eac9140eb79854ef3c0244e90a8304b9e5300374e8642eefaf1b",
+    "lock_screw": "c28f99451b949b07753008bd7c3a91ad7413678eb5dc83ac190d8ef6e911c021",
+    "mast": "a670a5cbe5342ade11bb675c67b628c095d309fa26fd92c17dc649ea42e7ce25"
+  },
+  "runtime": {
+    "manifestHash": "db7eda9ca0f7599605893eccbedbf9d7a2eb682bb80418080536971a776aab33",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "74f250de9b3dff3b5e0b94523625dd13c3710d3f81c487102225650971b064a6"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/cat-bowl/releases/export-636cb04e4a24d6755d78974ce2e3b4c2/model.step",
+      "role": "model/step",
+      "sha256": "29607aee209c5d93026be7d73e2d1e0a365714017afe540479200ca8ddffadad",
+      "sizeBytes": 1645808
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 10 object pairs.",
+    "counts": {
+      "objects": 5,
+      "pairs": 10,
+      "exact": 0,
+      "cached": 7,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "2d4c38043f1eec23cacc7cc251ac14d3",
+    "projectId": "e0aea0f9-5d34-41e5-ae26-a525611bdb29",
+    "receiptPath": "manufacturing/cat-bowl/releases/export-636cb04e4a24d6755d78974ce2e3b4c2/receipt.json",
+    "payloadSha256": "99a384de055ef615cad7391f5b31196628c27fb9abec275c4fa953f93087349e",
+    "mac": "7cbe6380e482d08a57f09e378b0d004789c79cec4786849774ae6fadafc8db7c"
+  },
+  "status": "reviewed",
+  "review": {
+    "reviewId": "review-100-76ffe72d-c0ff-4424-a00d-ce0a35400737",
+    "path": ".work/builds/cad/cat-bowl/reviews/review-100-76ffe72d-c0ff-4424-a00d-ce0a35400737/receipt.json",
+    "sha256": "854ecdbfc4877f37643fd8be980f5d936c9753f11a78dab762ea0f6d7be17170"
+  }
+}
