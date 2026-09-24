@@ -7,7 +7,7 @@
     {
       "id": "round_slide",
       "kind": "internal_fit",
-      "description": "28 mm圆柱与28.6 mm圆孔，背面5个浅凹点，间距10 mm，40 mm行程，最高22 mm插入",
+      "description": "28 mm圆柱与28.6 mm圆孔，背面5个6.4 mm方盲孔，10 mm间距，40 mm行程，最高插入22 mm",
       "source": "user_requested",
       "required": true
     },
@@ -21,7 +21,7 @@
     {
       "id": "height_lock",
       "kind": "mechanical",
-      "description": "五瓣花形手拧M6x1螺杆与底座直接内螺纹连接，包含内外螺旋牙形；杆头下总长12 mm，前端5 mm直径x2 mm短定位头配原五点；无螺母或外凸方块",
+      "description": "无螺纹方插销：6 mm方杆长14 mm；底座6.4 mm侧方孔、升降柱6.4 mm方盲孔深8.5 mm；保留五瓣手柄。无轴向防脱，只用于试配。",
       "source": "user_requested",
       "required": true
     }
@@ -36,13 +36,13 @@
     {
       "id": "reference_image_2",
       "source": "user_requested",
-      "description": "升降与螺丝锁紧参考",
+      "description": "升降与螺丝锁紧参考；其中螺纹/浅凹定位已由当前文字要求替代",
       "path": "product/references/uploads/20260922T112814810Z-2-image.png"
     },
     {
       "id": "round_mast_markup",
       "source": "user_requested",
-      "description": "圆柱、方榫、去除方块及背面螺纹要求",
+      "description": "圆柱、方榫、去除方块及背面螺纹要求；其中螺纹/浅凹定位已由当前文字要求替代",
       "path": "product/references/uploads/20260922T115012765Z-1-mark.png"
     },
     {
@@ -60,13 +60,13 @@
     {
       "id": "five_detents_knob_markup",
       "source": "user_requested",
-      "description": "五档浅凹点与手拧螺栓头",
+      "description": "五档浅凹点与手拧螺栓头；其中螺纹/浅凹定位已由当前文字要求替代",
       "path": "product/references/uploads/20260923T123743808Z-1-mark.png"
     },
     {
       "id": "thicker_thread_markup",
       "source": "user_requested",
-      "description": "背面螺杆加粗且与底座螺纹连接",
+      "description": "背面螺杆加粗且与底座螺纹连接；其中螺纹/浅凹定位已由当前文字要求替代",
       "path": "product/references/uploads/20260923T125407893Z-1-mark.png"
     },
     {
@@ -89,11 +89,11 @@
     }
   ],
   "assembly_story": {
-    "installation": "插入圆柱、套上斜碗；托住碗，对准背面凹点选择五档之一，再轻拧五瓣花形旋钮",
-    "maintenance": "托碗松螺丝，拔出碗与圆柱清洁",
+    "installation": "托住碗，对准五档方孔之一，直插方销至手柄止挡；不旋拧",
+    "maintenance": "托碗后向后拔出方销，换档或拆开清洁；插销无防脱，避免碰出",
     "user_access": [
-      "背面锁紧螺丝",
-      "可拆倾斜碗"
+      "五瓣手柄方销",
+      "可拆斜碗"
     ]
   },
   "cad": {

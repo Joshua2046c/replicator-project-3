@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 89,
-  "sourceHash": "431dbe6fe76c17409d5056ba96d9738b3ede65b60df37e5538147977ccad7f22",
+  "buildNumber": 93,
+  "sourceHash": "d60aa1e01f1dea8f205e0c43c76815968febe4d41c4d1744f36764c2eded545f",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "base",
           "order": 0,
           "path": "design/cat-bowl/source/parts/base/000-base.py",
-          "sha256": "d23c40b56e7944c4fa61f5da52b5fbcf0a2b0bb7c102b57f2f718679f3e43500"
+          "sha256": "1156e3be250e78c8b10f75087680ed6ba6e9f299d018aa133a7448534161a1c4"
         }
       ],
       "dependencies": []
@@ -28,7 +28,7 @@
           "target": "mast",
           "order": 0,
           "path": "design/cat-bowl/source/parts/mast/000-mast.py",
-          "sha256": "d194d24a8868212f65e7bfb0675d3ea8cbb5da24c3097d27b765b8bcd84b11ec"
+          "sha256": "984d9bc11716ddbacaa47f57177abe89bae611e1df0d1f99695c62fc6611961d"
         }
       ],
       "dependencies": []
@@ -56,7 +56,7 @@
           "target": "lock_hardware",
           "order": 0,
           "path": "design/cat-bowl/source/parts/lock_hardware/000-lock_hardware.py",
-          "sha256": "b1e9e1e7ecaeabba3447ebd5f6ae13f69329bc55465ca3b5dac04db6ab2323dd"
+          "sha256": "e3e0698dd18df9f54345fc5488d9482e484257af4228e1a006b37c55345528fd"
         }
       ],
       "dependencies": []
@@ -66,9 +66,9 @@
     {
       "id": "base",
       "target": "base",
-      "label": "M6内螺纹圆底座",
+      "label": "方孔圆底座",
       "kind": "generated",
-      "shapeHash": "916bc7a355dabac129eb822ca5339c3b3ac6e26ef19a544ca7e98e5f75b54abb",
+      "shapeHash": "6189acf6aa8cec284ff58072b40c3054694c22c5185a18d97061c7d66cbb5768",
       "transform": {
         "positionMm": [
           0,
@@ -92,9 +92,9 @@
     {
       "id": "mast",
       "target": "mast",
-      "label": "五档浅凹圆升降柱",
+      "label": "五档方孔升降柱",
       "kind": "generated",
-      "shapeHash": "131a0bd1d89f64ad5689a4d4f497883757b2da776b41ac7d0c6cd991137ec067",
+      "shapeHash": "a670a5cbe5342ade11bb675c67b628c095d309fa26fd92c17dc649ea42e7ce25",
       "transform": {
         "positionMm": [
           0,
@@ -144,12 +144,12 @@
     {
       "id": "lock_screw",
       "target": "lock_hardware",
-      "label": "M6螺纹六瓣手拧螺丝",
+      "label": "五瓣手柄方插销",
       "kind": "generated",
-      "shapeHash": "5b84df63acefc06b0af618c4a804c75cc08ca485e1a3ae53bd3ae2f55ec397d1",
+      "shapeHash": "ae009c762d3e331a0f62d488f9575a01ecd145a1a54fcefaa6be865c705b28a8",
       "transform": {
         "positionMm": [
-          -24.8,
+          -20,
           0,
           54
         ],
@@ -170,7 +170,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T15:19:09.766Z",
+  "updatedAt": "2026-09-24T08:39:57.431Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
@@ -183,9 +183,7 @@
       "base_lock_height": 54,
       "base_edge_radius": 1.5,
       "base_round_bore": 28.6,
-      "base_thread_engagement": 4.5,
-      "base_thread_diametral_compensation": 0.45,
-      "base_thread_reference_x": -24.8
+      "base_pin_hole_width": 6.4
     },
     "mast": {
       "mast_width": 28,
@@ -199,9 +197,8 @@
       "mast_detent_count": 5,
       "mast_detent_pitch": 10,
       "mast_detent_first_z": 10,
-      "mast_detent_diameter": 5.8,
-      "mast_detent_depth": 1.2,
-      "mast_detent_leadin": 0.35
+      "mast_detent_square_width": 6.4,
+      "mast_square_pocket_depth": 8.5
     },
     "bowl": {
       "bowl_diameter": 140,
@@ -226,15 +223,14 @@
       "bowl_photo_arc_span": 0.96
     },
     "lock_hardware": {
-      "lock_screw_thread_phase_deg": 0,
-      "lock_screw_visible_thread_length": 12,
       "lock_screw_knob_diameter": 28,
       "lock_screw_knob_thickness": 8,
       "lock_screw_knob_lobes": 5,
       "lock_screw_knob_scallop_radius": 6,
       "lock_screw_knob_edge_radius": 3,
-      "lock_screw_tip_diameter": 5,
-      "lock_screw_tip_length": 2
+      "lock_screw_square_width": 6,
+      "lock_screw_square_length": 14,
+      "lock_screw_square_tip_chamfer": 0.5
     }
   }
 }

@@ -28,7 +28,7 @@
       "source": "user"
     },
     "height_lock": {
-      "value": "背面螺丝直接旋入底座内螺纹，无螺母无外凸方块",
+      "value": "升降柱定位孔、底座对应侧孔和插销杆改为匹配正方形，取消螺纹锁定",
       "source": "user"
     },
     "height_datum": {
@@ -84,7 +84,7 @@
       "source": "default"
     },
     "lock_hardware": {
-      "value": "custom five-petal knob with modeled M6x1 external thread, 12 mm underhead length including 5 mm diameter x2 mm locating tip; matching compensated base thread",
+      "value": "custom 6 mm square sliding pin,14 mm underhead length, retained five-petal handle;6.4 mm square base opening and five mast blind pockets8.5 mm deep",
       "source": "default"
     },
     "delivery": {
@@ -160,7 +160,7 @@
       "source": "user"
     },
     "hand_knob": {
-      "value": "五瓣花朵外形的手拧螺帽",
+      "value": "五瓣花朵外形手柄，随取消螺纹改为插拔使用",
       "source": "user"
     },
     "detent_pitch_mm": {
@@ -168,11 +168,7 @@
       "source": "default"
     },
     "detent_depth_mm": {
-      "value": 1.2,
-      "source": "default"
-    },
-    "detent_diameter_mm": {
-      "value": 5.8,
+      "value": 8.5,
       "source": "default"
     },
     "hand_knob_geometry": {
@@ -187,7 +183,7 @@
       "source": "default"
     },
     "lock_shank_revision": {
-      "value": "标注处螺栓杆加粗，与底座采用螺纹连接",
+      "value": "插销为对应正方形，无螺纹",
       "source": "user"
     },
     "hand_knob_petal_count": {
@@ -220,6 +216,14 @@
     },
     "bowl_wall_definition": {
       "value": "最高瓣顶平面的径向口沿宽3.15 mm；球面内外壁不等厚，中央底厚6.825 mm；不是恒定法向壁厚",
+      "source": "default"
+    },
+    "detent_width_mm": {
+      "value": 6.4,
+      "source": "default"
+    },
+    "square_lock_scope": {
+      "value": "正方形指背面孔与插销杆；保留圆底盘与圆升降柱。方孔为盲孔，五档位置不变。直插销无自动防脱，当前为试配模型。",
       "source": "default"
     }
   },

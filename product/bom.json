@@ -2,22 +2,22 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "effffa3a2f3033a34cbc0e67ee486ad6fefe808a8fcc441d0de52c287ee80de3",
+  "requirements_digest": "264dd53aa3b52a089b36bd2c841aee719c07b448ed593f745a4e7808b115862b",
   "items": [
     {
       "id": "base",
-      "name": "圆弧过渡底座与背面M6x1补偿内螺纹",
+      "name": "圆底座，背面6.4 mm方孔，无螺纹",
       "quantity": 1,
-      "part_number": "custom-base-v4-M6",
+      "part_number": "custom-base-v5-square-pin",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
     },
     {
       "id": "mast",
-      "name": "5档浅凹点圆升降柱、斜承托台与方榫",
+      "name": "圆升降柱，五个6.4 mm方盲孔深8.5 mm",
       "quantity": 1,
-      "part_number": "custom-mast-v4",
+      "part_number": "custom-mast-v5-square-pockets",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -33,9 +33,9 @@
     },
     {
       "id": "lock_screw",
-      "name": "28 mm五瓣花形手拧螺丝，M6x1螺纹与5 mm定位端",
+      "name": "五瓣手柄方插销，6 mm方杆长14 mm，无螺纹",
       "quantity": 1,
-      "part_number": "custom-knob-M6x12-v3-flower5",
+      "part_number": "custom-square-pin-v1-flower5",
       "source": "default",
       "procurement_status": "custom_fabrication",
       "required_user_evidence": []
@@ -46,22 +46,17 @@
     {
       "id": "fit_test",
       "severity": "advisory",
-      "description": "直接打印内螺纹的尺寸、侧向打印质量与反复调节寿命需实测；圆柱松开后可旋转"
+      "description": "方销每侧0.2 mm试配间隙，横向方孔桥接、承载和耐磨未实测。"
+    },
+    {
+      "id": "pin_retention",
+      "severity": "advisory",
+      "description": "直插方销无防脱卡扣，可能被碰出；只交付试配模型，不宣称可无人看管使用。"
     },
     {
       "id": "food_contact",
       "severity": "advisory",
-      "description": "本次为装配样机；食品接触材料与工艺未验证"
-    },
-    {
-      "id": "purchase",
-      "severity": "advisory",
-      "description": "标准五金几何已明确；品牌库存价格未查询"
-    },
-    {
-      "id": "thread_mating",
-      "severity": "advisory",
-      "description": "本次建模M6x1内外螺旋牙形；PETG内螺纹补偿0.45 mm为默认试配值，真实锁紧及磨损需试验"
+      "description": "食品接触未验证。"
     }
   ]
 }

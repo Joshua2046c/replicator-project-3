@@ -51,7 +51,8 @@
     "sleeve_top_z": 66,
     "bore_floor_z": 4,
     "round_bore": 28.6,
-    "transition_radius": 19
+    "transition_radius": 19,
+    "rear_square_hole_width": 6.4
   },
   "mast": {
     "body_length": 62.11808800909513,
@@ -70,8 +71,7 @@
     "peg_tip_above_body": 16,
     "detent_count": 5,
     "detent_pitch": 10,
-    "detent_depth": 1.2,
-    "detent_diameter": 5.8,
+    "detent_depth": 8.5,
     "detent_local_z": [
       10,
       20,
@@ -79,46 +79,44 @@
       40,
       50
     ],
-    "detent_side": "-X"
+    "detent_side": "-X",
+    "detent_square_width": 6.4,
+    "detent_type": "square blind pocket"
   },
   "lock": {
-    "standard": "Custom five-petal knob with modeled M6x1 external thread,12 mm underhead including2 mm tip",
-    "receiver": "direct M6x1 internal thread; female major cutter6.45 for PETG",
+    "type": "custom threadless square pin",
     "side": "rear -X",
     "center_z": 54,
-    "screw_underhead_x": -24.8,
-    "tip_x": -12.8,
-    "kit_engagement_mm": 4.5,
-    "print_material": "PETG",
-    "kit_compensation_diametral_mm": 0.45,
-    "nuts": 0,
-    "external_blocks": 0,
-    "display_underhead_x": -24.8,
-    "intended_underhead_x": -24.8,
-    "display_state": "assembled at middle detent; modeled inner and outer helices",
-    "thread_mating_verified": false,
-    "thread_source": "bd_warehouse IsoThread M6x1; female negative6.45; matched12 mm helix originX=-24.8",
+    "underhead_x": -20,
+    "tip_x": -6,
+    "square_width": 6,
+    "shaft_length": 14,
+    "tip_chamfer": 0.5,
+    "base_hole_width": 6.4,
+    "mast_hole_width": 6.4,
+    "pocket_depth": 8.5,
+    "pocket_end_x": -5.5,
+    "tip_end_gap": 0.5,
+    "clearance_per_side": 0.2,
+    "nominal_centerline_mast_insertion": 8,
+    "minimum_full_section_insertion_approx": 7.175,
     "knob_diameter": 28,
     "knob_thickness": 8,
-    "thread_representation": "modeled helical internal and external surfaces, external final2 mm reduced to5 mm flat tip",
-    "nominal_pocket_contact_verified": true,
-    "thread_geometry_clearance_verified": true,
-    "thread_pair_minimum_gap_mm": 0.1124,
-    "tip_diameter_mm": 5.0,
-    "tip_length_mm": 2.0,
-    "external_thread_major_mm": 6,
-    "thread_pitch_mm": 1,
     "knob_lobes": 5,
-    "knob_shape": "five-petal flower",
     "knob_scallop_radius": 6,
     "knob_edge_radius": 3,
-    "knob_end_chamfer": 1.5
+    "knob_end_chamfer": 1.5,
+    "threaded": false,
+    "axial_retainer": false,
+    "display_state": "middle station, centered clearance rather than loaded contact",
+    "nuts": 0,
+    "external_blocks": 0
   },
   "connections": [
     {
       "id": "round_slide",
       "implementation": "free",
-      "reason": "round slide with five shallow rear pockets, 10 mm pitch across40 mm travel"
+      "reason": "Round slide retained, five square blind pockets at10 mm pitch across40 mm travel."
     },
     {
       "id": "bowl_detach",
@@ -127,25 +125,30 @@
     },
     {
       "id": "height_lock",
-      "implementation": "free_after_kit_rejection",
-      "reason": "M6 curved-mouth boss=none kit rejection; free implementation using library helical screw negative6.45 and M6 male with matching origin. Assembled geometry cleared; physical strength and fit untested."
+      "implementation": "free_square_pin",
+      "reason": "Custom straight6 mm square pin in6.4 mm base and mast holes;14 mm shaft; no screw, thread, spring or axial retainer."
     }
   ],
   "risks": [
     {
       "id": "load",
       "resolved_for_cad": true,
-      "note": "load and tip stability not physically tested"
+      "note": "Fit-check model only; pocket webs3.6 mm, pin and corner fatigue/load untested."
+    },
+    {
+      "id": "pin_retention",
+      "resolved_for_cad": true,
+      "note": "No axial retainer. Pin may slide out if bumped; no unattended-use claim. Support bowl when withdrawing pin."
     },
     {
       "id": "travel",
       "resolved_for_cad": true,
-      "note": "Five shallow points are not permanent pullout stops; hold bowl while loosening, retain22 mm insertion at highest point"
+      "note": "Five stations preserved;22 mm nominal highest overlap; clearance allows small loaded settlement. Fully remove pin before changing height."
     },
     {
-      "id": "thread_physical_fit",
+      "id": "square_fit",
       "resolved_for_cad": true,
-      "note": "Inner/outer M6 helices modeled, no static interference. PETG0.45 diametral compensation uncalibrated; no physical torque/wear/fit testing."
+      "note": "0.2 mm per-side clearance default, not calibrated; horizontal square hole roofs need printing review."
     }
   ],
   "height_stations": [
