@@ -1,0 +1,8 @@
+{
+  "formatVersion": 4,
+  "name": "升降猫碗",
+  "title": "瓢虫插接帽升降猫碗",
+  "summary": "带七斑瓢虫插接帽和独立方销的五档升降猫碗模型，用于外形与装配试配，尚未验证承载与食品接触安全。",
+  "license": "MIT",
+  "artifacts": "rebuild"
+}
