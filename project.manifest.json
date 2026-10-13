@@ -1,8 +1,13 @@
 {
   "formatVersion": 4,
-  "name": "升降猫碗",
-  "title": "瓢虫插接帽升降猫碗",
-  "summary": "带七斑瓢虫插接帽和独立方销的五档升降猫碗模型，用于外形与装配试配，尚未验证承载与食品接触安全。",
+  "name": "花花猫猫碗",
+  "title": "花花猫猫碗",
+  "summary": "以花朵为灵感的宠物碗，搭配可调节高度的支撑底座，适合不同年龄段的猫咪进食",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Miles"
+    }
+  ],
   "artifacts": "rebuild"
 }
