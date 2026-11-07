@@ -1,9 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 100,
-  "sourceHash": "78a05a04f4ee837cde4d8809d4df81f8535578d320204807d3ccc96e9303af23",
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "base",
@@ -82,7 +80,7 @@
       "target": "base",
       "label": "方孔圆底座",
       "kind": "generated",
-      "shapeHash": "6189acf6aa8cec284ff58072b40c3054694c22c5185a18d97061c7d66cbb5768",
+      "shapeHash": "9864319843e0536c4909a50d14a7b9de3f15855bafb09648b999b77130ac437b",
       "transform": {
         "positionMm": [
           0,
@@ -108,7 +106,7 @@
       "target": "mast",
       "label": "五档方孔升降柱",
       "kind": "generated",
-      "shapeHash": "a670a5cbe5342ade11bb675c67b628c095d309fa26fd92c17dc649ea42e7ce25",
+      "shapeHash": "8206080c6868d6f7e50a08eebe5dcdd5ac32ecc5bdb250dcec53084e46bea94b",
       "transform": {
         "positionMm": [
           0,
@@ -134,7 +132,7 @@
       "target": "bowl",
       "label": "圆弧浅瓣参考碗",
       "kind": "generated",
-      "shapeHash": "a5f4e3cdeee683c484b4c0018f185cb61037bc191940ed54eee417e4c65fa2ed",
+      "shapeHash": "78633196969250580131a88f551ccf46dad564e59b0f8b7d53fa00fc8fb8cd5e",
       "transform": {
         "positionMm": [
           0,
@@ -160,7 +158,7 @@
       "target": "lock_hardware",
       "label": "独立双端方销",
       "kind": "generated",
-      "shapeHash": "c28f99451b949b07753008bd7c3a91ad7413678eb5dc83ac190d8ef6e911c021",
+      "shapeHash": "1230df4f11d817a8ea2ea326eb96cbb4537f45a2697b30cde30d4bb0fc1c2e76",
       "transform": {
         "positionMm": [
           -20,
@@ -186,7 +184,7 @@
       "target": "ladybug_cap",
       "label": "圆形瓢虫插接帽",
       "kind": "generated",
-      "shapeHash": "71dc035b53e2eac9140eb79854ef3c0244e90a8304b9e5300374e8642eefaf1b",
+      "shapeHash": "92e9b38f04519d5732e1a8de17cd3816620e842a6c58ef9f18c592b07ddfb88e",
       "transform": {
         "positionMm": [
           -20,
@@ -210,7 +208,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-24T10:06:01.838Z",
+  "updatedAt": "2026-11-06T14:40:46.064Z",
   "parameters": {
     "base": {
       "base_diameter": 160,
